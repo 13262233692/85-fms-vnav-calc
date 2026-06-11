@@ -32,10 +32,14 @@ set(PROJECT_SOURCES
     src/core/arinc424_types.h
     src/core/navigation.cpp
     src/core/navigation.h
+    src/core/vnav_solver.cpp
+    src/core/vnav_solver.h
     src/gui/lnav_table.cpp
     src/gui/lnav_table.h
     src/gui/cdu_widget.cpp
     src/gui/cdu_widget.h
+    src/gui/vnav_profile_widget.cpp
+    src/gui/vnav_profile_widget.h
     src/gui/main_window.cpp
     src/gui/main_window.h
 )

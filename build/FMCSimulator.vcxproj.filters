@@ -13,10 +13,16 @@
     <ClCompile Include="D:\SOLO-10\85-fms-vnav-calc\src\core\navigation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="D:\SOLO-10\85-fms-vnav-calc\src\core\vnav_solver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="D:\SOLO-10\85-fms-vnav-calc\src\gui\lnav_table.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="D:\SOLO-10\85-fms-vnav-calc\src\gui\cdu_widget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\SOLO-10\85-fms-vnav-calc\src\gui\vnav_profile_widget.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="D:\SOLO-10\85-fms-vnav-calc\src\gui\main_window.cpp">
@@ -42,10 +48,16 @@
     <ClInclude Include="D:\SOLO-10\85-fms-vnav-calc\src\core\navigation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="D:\SOLO-10\85-fms-vnav-calc\src\core\vnav_solver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="D:\SOLO-10\85-fms-vnav-calc\src\gui\lnav_table.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="D:\SOLO-10\85-fms-vnav-calc\src\gui\cdu_widget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\SOLO-10\85-fms-vnav-calc\src\gui\vnav_profile_widget.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="D:\SOLO-10\85-fms-vnav-calc\src\gui\main_window.h">

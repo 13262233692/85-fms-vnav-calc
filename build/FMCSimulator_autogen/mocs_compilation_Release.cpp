@@ -2,3 +2,4 @@
 #include <MXUWEOXILK/moc_cdu_widget.cpp>
 #include <MXUWEOXILK/moc_lnav_table.cpp>
 #include <MXUWEOXILK/moc_main_window.cpp>
+#include <MXUWEOXILK/moc_vnav_profile_widget.cpp>

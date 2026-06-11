@@ -15,8 +15,10 @@
 #include <QTimer>
 #include "cdu_widget.h"
 #include "lnav_table.h"
+#include "vnav_profile_widget.h"
 #include "../core/arinc424_parser.h"
 #include "../core/navigation.h"
+#include "../core/vnav_solver.h"
 
 namespace fmc {
 namespace gui {
@@ -39,6 +41,8 @@ private slots:
     void onRouteExecuted(const nav::FlightPlan& plan);
     void updateStatusBar();
     void simulateFlightProgress();
+    void onVNAVWaypointClicked(size_t legIndex);
+    void onEditVNAVConstraints();
 
 private:
     void setupUI();
@@ -46,19 +50,29 @@ private:
     void setupConnections();
     void loadDefaultDatabase();
     QString generateSampleARINC424Data() const;
+    void runVNAVSolver();
+    nav::AltitudeConstraint getWaypointConstraint(size_t legIndex) const;
+    void setWaypointConstraint(size_t legIndex, const nav::AltitudeConstraint& c);
+    void applyDefaultSTARConstraints();
 
     CDUWidget* m_cduWidget;
     LNAVTable* m_lnavTable;
+    VNAVProfileWidget* m_vnavWidget;
     QSplitter* m_mainSplitter;
+    QSplitter* m_rightSplitter;
     QLabel* m_statusDatabaseLabel;
     QLabel* m_statusWaypointsLabel;
     QLabel* m_statusDistanceLabel;
     QLabel* m_statusFuelLabel;
     QLabel* m_statusTimeLabel;
+    QLabel* m_statusVNAVLabel;
 
     arinc424::ARINC424Database m_database;
     arinc424::ARINC424Parser m_parser;
     nav::FlightPlan m_currentPlan;
+    nav::VNAVProfile m_vnavProfile;
+    nav::VNAVSolver m_vnavSolver;
+    std::vector<nav::AltitudeConstraint> m_altitudeConstraints;
 
     bool m_databaseLoaded;
     bool m_routeExecuted;

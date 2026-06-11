@@ -16,7 +16,10 @@ MainWindow::MainWindow(QWidget* parent)
     : QMainWindow(parent),
       m_cduWidget(nullptr),
       m_lnavTable(nullptr),
+      m_vnavWidget(nullptr),
       m_mainSplitter(nullptr),
+      m_rightSplitter(nullptr),
+      m_statusVNAVLabel(nullptr),
       m_databaseLoaded(false),
       m_routeExecuted(false),
       m_simulatedLegIndex(-1),
@@ -43,7 +46,7 @@ void MainWindow::setupUI() {
     mainLayout->setContentsMargins(0, 0, 0, 0);
     mainLayout->setSpacing(0);
 
-    QLabel* titleLabel = new QLabel("✈  FLIGHT MANAGEMENT COMPUTER  ✈");
+    QLabel* titleLabel = new QLabel("✈  FLIGHT MANAGEMENT COMPUTER  ✈  VNAV ENHANCED");
     titleLabel->setStyleSheet(R"(
         QLabel {
             background-color: rgb(10, 20, 40);
@@ -69,13 +72,26 @@ void MainWindow::setupUI() {
         }
     )");
 
+    m_rightSplitter = new QSplitter(Qt::Vertical, this);
+    m_rightSplitter->setHandleWidth(3);
+
     m_lnavTable = new LNAVTable(this);
     m_lnavTable->setMinimumWidth(700);
+    m_lnavTable->setMinimumHeight(250);
+
+    m_vnavWidget = new VNAVProfileWidget(this);
+    m_vnavWidget->setMinimumHeight(280);
 
     m_cduWidget = new CDUWidget(this);
     m_cduWidget->setMinimumWidth(480);
 
-    m_mainSplitter->addWidget(m_lnavTable);
+    m_rightSplitter->addWidget(m_lnavTable);
+    m_rightSplitter->addWidget(m_vnavWidget);
+    m_rightSplitter->setStretchFactor(0, 3);
+    m_rightSplitter->setStretchFactor(1, 2);
+    m_rightSplitter->setSizes(QList<int>() << 450 << 320);
+
+    m_mainSplitter->addWidget(m_rightSplitter);
     m_mainSplitter->addWidget(m_cduWidget);
     m_mainSplitter->setStretchFactor(0, 3);
     m_mainSplitter->setStretchFactor(1, 2);
@@ -99,6 +115,10 @@ void MainWindow::setupUI() {
     m_statusDatabaseLabel = new QLabel("DB: NOT LOADED");
     m_statusDatabaseLabel->setStyleSheet("color: rgb(255, 100, 100); padding: 0 10px;");
     statusBar->addWidget(m_statusDatabaseLabel);
+
+    m_statusVNAVLabel = new QLabel("VNAV: IDLE");
+    m_statusVNAVLabel->setStyleSheet("color: rgb(200, 200, 200); padding: 0 10px;");
+    statusBar->addWidget(m_statusVNAVLabel);
 
     m_statusWaypointsLabel = new QLabel("WPT: 0");
     m_statusWaypointsLabel->setStyleSheet("color: rgb(0, 200, 255); padding: 0 10px;");
@@ -190,6 +210,17 @@ void MainWindow::setupMenuBar() {
     executeAction->setShortcut(QKeySequence("Ctrl+X"));
     connect(executeAction, &QAction::triggered, this, &MainWindow::onExecuteRoute);
 
+    routeMenu->addSeparator();
+
+    QAction* editVNAVAction = routeMenu->addAction("Edit &VNAV Constraints...");
+    editVNAVAction->setShortcut(QKeySequence("Ctrl+V"));
+    connect(editVNAVAction, &QAction::triggered, this, &MainWindow::onEditVNAVConstraints);
+
+    QAction* applySTARAction = routeMenu->addAction("Apply Sample STAR &Constraints");
+    connect(applySTARAction, &QAction::triggered, this, [this]() {
+        applyDefaultSTARConstraints();
+    });
+
     QMenu* helpMenu = menuBar->addMenu("&Help");
 
     QAction* aboutAction = helpMenu->addAction("&About FMC...");
@@ -202,6 +233,8 @@ void MainWindow::setupConnections() {
             this, &MainWindow::onFlightPlanChanged);
     connect(m_cduWidget, &CDUWidget::routeExecuted,
             this, &MainWindow::onRouteExecuted);
+    connect(m_vnavWidget, &VNAVProfileWidget::waypointClicked,
+            this, &MainWindow::onVNAVWaypointClicked);
 }
 
 void MainWindow::loadDefaultDatabase() {
@@ -289,10 +322,17 @@ void MainWindow::onLoadDefaultRoute() {
 void MainWindow::onClearRoute() {
     m_cduWidget->clearRoute();
     m_lnavTable->clearFlightPlan();
+    m_vnavWidget->clearProfile();
+    m_altitudeConstraints.clear();
+    m_vnavProfile = nav::VNAVProfile();
     m_routeExecuted = false;
     m_simulatedLegIndex = -1;
     if (m_flightSimTimer) m_flightSimTimer->stop();
     updateStatusBar();
+    if (m_statusVNAVLabel) {
+        m_statusVNAVLabel->setText("VNAV: CLEARED");
+        m_statusVNAVLabel->setStyleSheet("color: rgb(200, 200, 200); padding: 0 10px;");
+    }
 }
 
 void MainWindow::onExecuteRoute() {
@@ -390,11 +430,276 @@ void MainWindow::onRouteExecuted(const nav::FlightPlan& plan) {
     m_simulatedLegIndex = 0;
     m_lnavTable->setFlightPlan(plan);
 
+    runVNAVSolver();
+
     if (!m_flightSimTimer->isActive()) {
         m_flightSimTimer->start();
     }
 
     updateStatusBar();
+}
+
+void MainWindow::runVNAVSolver() {
+    if (m_currentPlan.legs.size() < 2) {
+        if (m_statusVNAVLabel) {
+            m_statusVNAVLabel->setText("VNAV: INSUFFICIENT WAYPOINTS");
+            m_statusVNAVLabel->setStyleSheet("color: rgb(255, 180, 0); padding: 0 10px;");
+        }
+        return;
+    }
+
+    if (m_altitudeConstraints.size() < m_currentPlan.legs.size()) {
+        m_altitudeConstraints.resize(m_currentPlan.legs.size());
+    }
+
+    try {
+        m_vnavSolver.setAircraftPerformance(nav::AircraftPerformance::boeing737());
+        m_vnavSolver.setFlightPlan(m_currentPlan);
+        m_vnavSolver.setAltitudeConstraints(m_altitudeConstraints);
+        m_vnavSolver.setCruiseAltitude(36000.0);
+
+        m_vnavProfile = m_vnavSolver.solve();
+
+        m_vnavWidget->setVNAVProfile(m_vnavProfile);
+
+        QString statusStr;
+        QString statusColor;
+        switch (m_vnavProfile.status) {
+            case nav::VNAVSolverStatus::Success:
+                statusStr = QString("VNAV: OK | CRZ %1FT | TOD %2NM")
+                                .arg(m_vnavProfile.cruiseAltitudeFt, 0, 'f', 0)
+                                .arg(m_vnavProfile.topOfDescentDistanceNm, 0, 'f', 0);
+                statusColor = "rgb(0, 255, 150);";
+                break;
+            case nav::VNAVSolverStatus::SuccessWithWarnings:
+                statusStr = QString("VNAV: WARNING | %1 relaxed")
+                                .arg(m_vnavProfile.numConstraintsRelaxed);
+                if (m_vnavProfile.gradientTruncationApplied)
+                    statusStr += " | GRAD TRUNC";
+                statusColor = "rgb(255, 180, 0);";
+                break;
+            case nav::VNAVSolverStatus::ConstraintInfeasible:
+                statusStr = QString("VNAV: INFEASIBLE | %1 violations")
+                                .arg(m_vnavProfile.numConstraintsRelaxed);
+                statusColor = "rgb(255, 80, 80);";
+                break;
+            default:
+                statusStr = "VNAV: ERROR";
+                statusColor = "rgb(255, 80, 80);";
+                break;
+        }
+
+        if (m_statusVNAVLabel) {
+            m_statusVNAVLabel->setText(statusStr);
+            m_statusVNAVLabel->setStyleSheet(QString("color: %1 padding: 0 10px;").arg(statusColor));
+        }
+
+    } catch (const std::exception& e) {
+        if (m_statusVNAVLabel) {
+            m_statusVNAVLabel->setText(QString("VNAV: CRASH AVOIDED - %1")
+                .arg(QString::fromLocal8Bit(e.what()).left(40)));
+            m_statusVNAVLabel->setStyleSheet("color: rgb(255, 80, 80); padding: 0 10px;");
+        }
+    } catch (...) {
+        if (m_statusVNAVLabel) {
+            m_statusVNAVLabel->setText("VNAV: CRASH AVOIDED - UNKNOWN");
+            m_statusVNAVLabel->setStyleSheet("color: rgb(255, 80, 80); padding: 0 10px;");
+        }
+    }
+}
+
+nav::AltitudeConstraint MainWindow::getWaypointConstraint(size_t legIndex) const {
+    if (legIndex < m_altitudeConstraints.size()) {
+        return m_altitudeConstraints[legIndex];
+    }
+    return nav::AltitudeConstraint();
+}
+
+void MainWindow::setWaypointConstraint(size_t legIndex, const nav::AltitudeConstraint& c) {
+    if (legIndex >= m_altitudeConstraints.size()) {
+        m_altitudeConstraints.resize(legIndex + 1);
+    }
+    m_altitudeConstraints[legIndex] = c;
+}
+
+void MainWindow::applyDefaultSTARConstraints() {
+    if (m_currentPlan.legs.empty()) {
+        if (m_statusVNAVLabel) {
+            m_statusVNAVLabel->setText("VNAV: NO ROUTE - CREATE FIRST");
+            m_statusVNAVLabel->setStyleSheet("color: rgb(255, 180, 0); padding: 0 10px;");
+        }
+        return;
+    }
+
+    size_t n = m_currentPlan.legs.size();
+    m_altitudeConstraints.assign(n, nav::AltitudeConstraint());
+
+    if (n >= 1) {
+        m_altitudeConstraints[0] = nav::AltitudeConstraint::makeAt(200.0, "DEPARTURE RWY");
+    }
+    if (n >= 2) {
+        m_altitudeConstraints[n-1] = nav::AltitudeConstraint::makeAt(100.0, "DESTINATION RWY");
+    }
+
+    if (n >= 6) {
+        size_t approach1 = n - 2;
+        size_t approach2 = n - 3;
+        size_t terminal = n - 4;
+
+        if (approach2 < n) {
+            m_altitudeConstraints[approach2] = nav::AltitudeConstraint::makeAt(
+                6000.0, "STAR IAF - 6000FT");
+        }
+        if (approach1 < n) {
+            m_altitudeConstraints[approach1] = nav::AltitudeConstraint::makeBelow(
+                10000.0, "ATC 10000FT LIMIT");
+        }
+        if (terminal < n) {
+            m_altitudeConstraints[terminal] = nav::AltitudeConstraint::makeBelow(
+                12000.0, "TERMINAL 12000FT");
+        }
+    }
+
+    if (m_routeExecuted) {
+        runVNAVSolver();
+    } else {
+        if (m_statusVNAVLabel) {
+            m_statusVNAVLabel->setText("VNAV: CONSTRAINTS SET - EXECUTE ROUTE");
+            m_statusVNAVLabel->setStyleSheet("color: rgb(100, 200, 255); padding: 0 10px;");
+        }
+    }
+}
+
+void MainWindow::onVNAVWaypointClicked(size_t /*legIndex*/) {
+    onEditVNAVConstraints();
+}
+
+void MainWindow::onEditVNAVConstraints() {
+    if (m_currentPlan.legs.empty()) {
+        QMessageBox::warning(this, "No Route",
+                             "Please create and execute a route first before editing constraints.");
+        return;
+    }
+
+    if (m_altitudeConstraints.size() < m_currentPlan.legs.size()) {
+        m_altitudeConstraints.resize(m_currentPlan.legs.size());
+    }
+
+    QString summary;
+    QTextStream ss(&summary);
+    ss << "<h3 style='color:#00FFFF;'>✈ VNAV Altitude Constraint Editor</h3>"
+       << "<p style='color:#7FD4FF;'>Current aircraft: <b>Boeing 737</b></p>"
+       << "<p style='color:#FFD000;'>Max descent gradient: 1500ft/NM | Max climb gradient: 600ft/NM</p>"
+       << "<hr>"
+       << "<table border='1' cellpadding='4' cellspacing='0' "
+       << "style='font-family:Consolas,monospace; font-size:10pt; border-collapse:collapse;'>"
+       << "<tr style='background:#102040; color:#00FFFF;'>"
+       << "<th>SEQ</th><th>WAYPOINT</th><th>DIST(NM)</th>"
+       << "<th>CONSTRAINT</th><th>SOURCE</th></tr>";
+
+    for (size_t i = 0; i < m_currentPlan.legs.size(); ++i) {
+        const auto& leg = m_currentPlan.legs[i];
+        const auto& c = m_altitudeConstraints[i];
+
+        QString constraintTxt;
+        QString color = leg.altitude.has_value() ? "#7FFF7F" : "#FFFFFF";
+        switch (c.type) {
+            case nav::AltitudeConstraintType::None:
+                constraintTxt = "<span style='color:#888888;'>NONE</span>";
+                break;
+            case nav::AltitudeConstraintType::At:
+                constraintTxt = QString("@ <b>%1ft</b>").arg(c.altitudeAtFt, 0, 'f', 0);
+                color = "#FFD000";
+                break;
+            case nav::AltitudeConstraintType::AtOrAbove:
+                constraintTxt = QString("A+ ≥ <b>%1ft</b>").arg(c.altitudeAboveFt, 0, 'f', 0);
+                color = "#00FF80";
+                break;
+            case nav::AltitudeConstraintType::AtOrBelow:
+                constraintTxt = QString("B- ≤ <b>%1ft</b>").arg(c.altitudeBelowFt, 0, 'f', 0);
+                color = "#FFA000";
+                break;
+            case nav::AltitudeConstraintType::Between:
+                constraintTxt = QString("[%1, %2]ft")
+                    .arg(c.altitudeAboveFt, 0, 'f', 0)
+                    .arg(c.altitudeBelowFt, 0, 'f', 0);
+                color = "#00FFFF";
+                break;
+        }
+
+        QString src = c.source.empty() ? "-" : QString::fromStdString(c.source);
+
+        ss << QString("<tr style='color:%1;'><td align='right'>%2</td>"
+                      "<td><b>%3</b></td><td align='right'>%4</td>"
+                      "<td>%5</td><td>%6</td></tr>")
+                  .arg(color)
+                  .arg(i + 1)
+                  .arg(QString::fromStdString(leg.waypointIdentifier))
+                  .arg(leg.cumulativeDistance, 0, 'f', 1)
+                  .arg(constraintTxt)
+                  .arg(src);
+    }
+    ss << "</table><br>";
+
+    if (!m_vnavProfile.warnings.empty()) {
+        ss << "<h4 style='color:#FFA000;'>⚠ Last VNAV Solver Warnings:</h4>"
+           << "<ul style='color:#FFD080; font-size:9pt;'>";
+        size_t showN = std::min(m_vnavProfile.warnings.size(), size_t(5));
+        for (size_t i = 0; i < showN; ++i) {
+            ss << "<li>" << QString::fromStdString(m_vnavProfile.warnings[i]) << "</li>";
+        }
+        if (m_vnavProfile.warnings.size() > showN)
+            ss << "<li>...and " << (m_vnavProfile.warnings.size() - showN) << " more</li>";
+        ss << "</ul>";
+    }
+
+    ss << "<hr><p style='color:#7FD4FF;'>"
+       << "For demo purposes, click buttons below to apply constraint patterns.<br>"
+       << "The solver uses <b>Dynamic Programming with gradient truncation</b> - "
+       << "it CANNOT crash or recurse infinitely.</p>";
+
+    QMessageBox msgBox(this);
+    msgBox.setWindowTitle("VNAV Constraint Editor");
+    msgBox.setTextFormat(Qt::RichText);
+    msgBox.setText(summary);
+
+    QPushButton* applySTAR = msgBox.addButton("Apply STAR Pattern", QMessageBox::ActionRole);
+    QPushButton* applyExtreme = msgBox.addButton("Apply IMPOSSIBLE Pattern (Test)", QMessageBox::ActionRole);
+    QPushButton* clearAllBtn = msgBox.addButton("Clear All Constraints", QMessageBox::ActionRole);
+    QPushButton* okBtn = msgBox.addButton(QMessageBox::Ok);
+    msgBox.setDefaultButton(okBtn);
+
+    Q_UNUSED(okBtn);
+
+    msgBox.exec();
+
+    QAbstractButton* clicked = msgBox.clickedButton();
+    if (clicked == applySTAR) {
+        applyDefaultSTARConstraints();
+        onEditVNAVConstraints();
+    } else if (clicked == applyExtreme) {
+        size_t n = m_currentPlan.legs.size();
+        m_altitudeConstraints.assign(n, nav::AltitudeConstraint());
+        if (n >= 1) m_altitudeConstraints[0] = nav::AltitudeConstraint::makeAt(150.0, "DEPT");
+        if (n >= 5) {
+            for (size_t i = 1; i < n - 1; ++i) {
+                if (i < n / 2) {
+                    m_altitudeConstraints[i] = nav::AltitudeConstraint::makeAt(
+                        40000.0 - i * 5000.0, "TEST: DEEP DESCENT");
+                } else {
+                    m_altitudeConstraints[i] = nav::AltitudeConstraint::makeAt(
+                        1500.0 + i * 2000.0, "TEST: IMPOSSIBLE CLIMB");
+                }
+            }
+        }
+        if (n >= 2) m_altitudeConstraints[n-1] = nav::AltitudeConstraint::makeAt(200.0, "DEST");
+        if (m_routeExecuted) runVNAVSolver();
+        onEditVNAVConstraints();
+    } else if (clicked == clearAllBtn) {
+        m_altitudeConstraints.assign(m_currentPlan.legs.size(), nav::AltitudeConstraint());
+        if (m_routeExecuted) runVNAVSolver();
+        onEditVNAVConstraints();
+    }
 }
 
 void MainWindow::updateStatusBar() {
