@@ -1,0 +1,10 @@
+^D:\SOLO-10\85-FMS-VNAV-CALC\BUILD\CMAKEFILES\0714B34576304D8146995D493BD2C0E2\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/SOLO-10/85-fms-vnav-calc -BD:/SOLO-10/85-fms-vnav-calc/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/SOLO-10/85-fms-vnav-calc/build/FMCSimulator.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
