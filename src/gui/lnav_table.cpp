@@ -22,7 +22,8 @@ LNAVTable::LNAVTable(QWidget* parent)
     : QTableWidget(parent),
       m_magneticVariation(0.0),
       m_activeLegIndex(-1),
-      m_hasValidPlan(false) {
+      m_hasValidPlan(false),
+      m_hasTrajectoryData(false) {
     setupTable();
 }
 
@@ -33,23 +34,30 @@ void LNAVTable::setupTable() {
     QStringList headers;
     headers << "SEQ" << "WAYPOINT" << "AIRWAY" << "LATITUDE" << "LONGITUDE"
             << "ALT" << "DIST" << "CUM" << "TRK(TRUE)" << "TRK(MAG)"
-            << "ETA" << "REMARKS";
+            << "TAS" << "GS" << "MACH" << "V/S"
+            << "EFOB" << "FF" << "ETA" << "REMARKS";
     setHorizontalHeaderLabels(headers);
 
     horizontalHeader()->setSectionResizeMode(QHeaderView::Interactive);
     horizontalHeader()->setStretchLastSection(true);
-    horizontalHeader()->setDefaultSectionSize(80);
+    horizontalHeader()->setDefaultSectionSize(70);
     setColumnWidth(COL_SEQUENCE, 50);
     setColumnWidth(COL_WAYPOINT, 90);
-    setColumnWidth(COL_AIRWAY, 80);
+    setColumnWidth(COL_AIRWAY, 75);
     setColumnWidth(COL_LATITUDE, 110);
     setColumnWidth(COL_LONGITUDE, 110);
-    setColumnWidth(COL_ALTITUDE, 70);
-    setColumnWidth(COL_DISTANCE, 70);
-    setColumnWidth(COL_CUMULATIVE, 80);
-    setColumnWidth(COL_TRUE_TRACK, 85);
-    setColumnWidth(COL_MAG_TRACK, 85);
-    setColumnWidth(COL_ETA, 70);
+    setColumnWidth(COL_ALTITUDE, 65);
+    setColumnWidth(COL_DISTANCE, 65);
+    setColumnWidth(COL_CUMULATIVE, 75);
+    setColumnWidth(COL_TRUE_TRACK, 80);
+    setColumnWidth(COL_MAG_TRACK, 80);
+    setColumnWidth(COL_TAS, 65);
+    setColumnWidth(COL_GS, 65);
+    setColumnWidth(COL_MACH, 60);
+    setColumnWidth(COL_VS, 70);
+    setColumnWidth(COL_EFOB, 80);
+    setColumnWidth(COL_FF, 75);
+    setColumnWidth(COL_ETA, 65);
     setColumnWidth(COL_REMARKS, 120);
 
     verticalHeader()->setDefaultSectionSize(ROW_HEIGHT);
@@ -127,9 +135,19 @@ void LNAVTable::updateFlightPlan(const nav::FlightPlan& plan) {
     populateTable();
 }
 
+void LNAVTable::setTrajectoryResult(const bada::TrajectoryIntegrationResult& result) {
+    m_trajectory = result;
+    m_hasTrajectoryData = result.success && !result.legs.empty();
+    if (m_hasValidPlan) {
+        populateTable();
+    }
+}
+
 void LNAVTable::clearFlightPlan() {
     m_flightPlan.clear();
+    m_trajectory = bada::TrajectoryIntegrationResult();
     m_hasValidPlan = false;
+    m_hasTrajectoryData = false;
     m_activeLegIndex = -1;
     setRowCount(0);
 }
@@ -266,9 +284,63 @@ void LNAVTable::populateTable() {
         magTrkItem->setBackground(bgBrush);
         setItem(row, COL_MAG_TRACK, magTrkItem);
 
+        QString tasText = "--";
+        QString gsText = "--";
+        QString machText = "--";
+        QString vsText = "--";
+        QString efobText = "--";
+        QString ffText = "--";
         QString etaText = leg.estimatedTimeEnroute.has_value()
                               ? formatETA(*leg.estimatedTimeEnroute)
                               : "--";
+
+        if (m_hasTrajectoryData && i < m_trajectory.legs.size()) {
+            const auto& tjLeg = m_trajectory.legs[i];
+            tasText = formatTAS(tjLeg.finalTasKT);
+            gsText = formatGS(tjLeg.avgGsKT);
+            machText = formatMach(tjLeg.finalMach);
+            vsText = formatVS(tjLeg.avgVerticalSpeedFpm);
+            efobText = formatEFOB(tjLeg.fuelRemainingKg);
+            ffText = formatFuelFlow(tjLeg.avgFuelFlowKgMin);
+            etaText = formatETA(tjLeg.cumulativeTimeMin);
+        }
+
+        QTableWidgetItem* tasItem = new QTableWidgetItem(tasText);
+        tasItem->setTextAlignment(Qt::AlignCenter);
+        tasItem->setForeground(QBrush(QColor(100, 255, 255)));
+        tasItem->setBackground(bgBrush);
+        setItem(row, COL_TAS, tasItem);
+
+        QTableWidgetItem* gsItem = new QTableWidgetItem(gsText);
+        gsItem->setTextAlignment(Qt::AlignCenter);
+        gsItem->setForeground(QBrush(QColor(0, 255, 200)));
+        gsItem->setBackground(bgBrush);
+        setItem(row, COL_GS, gsItem);
+
+        QTableWidgetItem* machItem = new QTableWidgetItem(machText);
+        machItem->setTextAlignment(Qt::AlignCenter);
+        machItem->setForeground(QBrush(QColor(180, 220, 255)));
+        machItem->setBackground(bgBrush);
+        setItem(row, COL_MACH, machItem);
+
+        QTableWidgetItem* vsItem = new QTableWidgetItem(vsText);
+        vsItem->setTextAlignment(Qt::AlignCenter);
+        vsItem->setForeground(QBrush(QColor(255, 180, 100)));
+        vsItem->setBackground(bgBrush);
+        setItem(row, COL_VS, vsItem);
+
+        QTableWidgetItem* efobItem = new QTableWidgetItem(efobText);
+        efobItem->setTextAlignment(Qt::AlignCenter);
+        efobItem->setForeground(QBrush(QColor(255, 220, 100)));
+        efobItem->setBackground(bgBrush);
+        setItem(row, COL_EFOB, efobItem);
+
+        QTableWidgetItem* ffItem = new QTableWidgetItem(ffText);
+        ffItem->setTextAlignment(Qt::AlignCenter);
+        ffItem->setForeground(QBrush(QColor(255, 150, 50)));
+        ffItem->setBackground(bgBrush);
+        setItem(row, COL_FF, ffItem);
+
         QTableWidgetItem* etaItem = new QTableWidgetItem(etaText);
         etaItem->setTextAlignment(Qt::AlignCenter);
         etaItem->setForeground(QBrush(QColor(255, 220, 100)));
@@ -283,6 +355,46 @@ void LNAVTable::populateTable() {
 
         setRowHeight(row, ROW_HEIGHT);
     }
+}
+
+QString LNAVTable::formatTAS(double tasKT) const {
+    char buffer[16];
+    std::snprintf(buffer, sizeof(buffer), "%.0fKT", tasKT);
+    return QString(buffer);
+}
+
+QString LNAVTable::formatGS(double gsKT) const {
+    char buffer[16];
+    std::snprintf(buffer, sizeof(buffer), "%.0fKT", gsKT);
+    return QString(buffer);
+}
+
+QString LNAVTable::formatMach(double mach) const {
+    char buffer[16];
+    std::snprintf(buffer, sizeof(buffer), "M%.3f", mach);
+    return QString(buffer);
+}
+
+QString LNAVTable::formatVS(double vsFpm) const {
+    char buffer[16];
+    if (std::abs(vsFpm) < 50.0) {
+        std::snprintf(buffer, sizeof(buffer), "LVL");
+    } else {
+        std::snprintf(buffer, sizeof(buffer), "%+.0f", vsFpm);
+    }
+    return QString(buffer);
+}
+
+QString LNAVTable::formatEFOB(double fuelKg) const {
+    char buffer[16];
+    std::snprintf(buffer, sizeof(buffer), "%.0fKG", fuelKg);
+    return QString(buffer);
+}
+
+QString LNAVTable::formatFuelFlow(double ffKgMin) const {
+    char buffer[16];
+    std::snprintf(buffer, sizeof(buffer), "%.1f", ffKgMin * 60.0 / 1000.0);
+    return QString(buffer) + "T";
 }
 
 QString LNAVTable::formatLatitude(double lat) const {

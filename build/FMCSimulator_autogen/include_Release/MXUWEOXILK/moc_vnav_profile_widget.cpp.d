@@ -198,5 +198,9 @@ D:/SOLO-10/85-fms-vnav-calc/build/FMCSimulator_autogen/include_Release/MXUWEOXIL
   D:/Qt/6.8.3/msvc2022_64/include/QtWidgets/qtwidgetsglobal.h \
   D:/Qt/6.8.3/msvc2022_64/include/QtWidgets/qwidget.h \
   D:/SOLO-10/85-fms-vnav-calc/src/core/arinc424_types.h \
+  D:/SOLO-10/85-fms-vnav-calc/src/core/bada_aircraft.h \
+  D:/SOLO-10/85-fms-vnav-calc/src/core/bada_atmosphere.h \
+  D:/SOLO-10/85-fms-vnav-calc/src/core/bada_integrator.h \
+  D:/SOLO-10/85-fms-vnav-calc/src/core/bada_wind.h \
   D:/SOLO-10/85-fms-vnav-calc/src/core/navigation.h \
   D:/SOLO-10/85-fms-vnav-calc/src/core/vnav_solver.h

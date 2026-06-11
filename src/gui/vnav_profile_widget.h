@@ -18,6 +18,7 @@
 #include <QPair>
 
 #include "../core/vnav_solver.h"
+#include "../core/bada_integrator.h"
 
 namespace fmc {
 namespace gui {
@@ -30,6 +31,7 @@ public:
     ~VNAVProfileWidget() override;
 
     void setVNAVProfile(const nav::VNAVProfile& profile);
+    void setTrajectoryResult(const bada::TrajectoryIntegrationResult& result);
     void clearProfile();
     nav::VNAVProfile getCurrentProfile() const { return m_profile; }
 
@@ -47,6 +49,8 @@ protected:
 
 private:
     nav::VNAVProfile m_profile;
+    bada::TrajectoryIntegrationResult m_trajectory;
+    bool m_hasTrajectoryData;
     int m_marginLeft;
     int m_marginRight;
     int m_marginTop;
@@ -58,20 +62,26 @@ private:
 
     double m_xRangeNm;
     double m_yRangeFt;
+    double m_y2RangeKg;
     double m_xMinNm;
     double m_yMinFt;
+    double m_y2MinKg;
 
     QVector<QPointF> m_profilePoints;
+    QVector<QPointF> m_fuelCurvePoints;
     QVector<QPair<QString, QPointF>> m_waypointLabels;
 
     void recalcPlotGeometry();
     QPointF toScreen(double distanceNm, double altitudeFt) const;
+    QPointF toScreenFuel(double distanceNm, double fuelKg) const;
     QPair<double, double> fromScreen(const QPoint& pt) const;
 
     void drawBackground(QPainter& p);
     void drawGrid(QPainter& p);
     void drawAxes(QPainter& p);
+    void drawFuelAxis(QPainter& p);
     void drawProfileLine(QPainter& p);
+    void drawFuelCurve(QPainter& p);
     void drawWaypoints(QPainter& p);
     void drawConstraintMarkers(QPainter& p);
     void drawPhaseLabels(QPainter& p);

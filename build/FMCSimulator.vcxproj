@@ -461,6 +461,14 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="D:\SOLO-10\85-fms-vnav-calc\src\core\navigation.h" />
     <ClCompile Include="D:\SOLO-10\85-fms-vnav-calc\src\core\vnav_solver.cpp" />
     <ClInclude Include="D:\SOLO-10\85-fms-vnav-calc\src\core\vnav_solver.h" />
+    <ClCompile Include="D:\SOLO-10\85-fms-vnav-calc\src\core\bada_atmosphere.cpp" />
+    <ClInclude Include="D:\SOLO-10\85-fms-vnav-calc\src\core\bada_atmosphere.h" />
+    <ClCompile Include="D:\SOLO-10\85-fms-vnav-calc\src\core\bada_aircraft.cpp" />
+    <ClInclude Include="D:\SOLO-10\85-fms-vnav-calc\src\core\bada_aircraft.h" />
+    <ClCompile Include="D:\SOLO-10\85-fms-vnav-calc\src\core\bada_wind.cpp" />
+    <ClInclude Include="D:\SOLO-10\85-fms-vnav-calc\src\core\bada_wind.h" />
+    <ClCompile Include="D:\SOLO-10\85-fms-vnav-calc\src\core\bada_integrator.cpp" />
+    <ClInclude Include="D:\SOLO-10\85-fms-vnav-calc\src\core\bada_integrator.h" />
     <ClCompile Include="D:\SOLO-10\85-fms-vnav-calc\src\gui\lnav_table.cpp" />
     <ClInclude Include="D:\SOLO-10\85-fms-vnav-calc\src\gui\lnav_table.h" />
     <ClCompile Include="D:\SOLO-10\85-fms-vnav-calc\src\gui\cdu_widget.cpp" />

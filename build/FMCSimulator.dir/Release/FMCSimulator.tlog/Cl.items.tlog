@@ -2,6 +2,10 @@ D:\SOLO-10\85-fms-vnav-calc\src\main.cpp;D:\SOLO-10\85-fms-vnav-calc\build\FMCSi
 D:\SOLO-10\85-fms-vnav-calc\src\core\arinc424_parser.cpp;D:\SOLO-10\85-fms-vnav-calc\build\FMCSimulator.dir\Release\arinc424_parser.obj
 D:\SOLO-10\85-fms-vnav-calc\src\core\navigation.cpp;D:\SOLO-10\85-fms-vnav-calc\build\FMCSimulator.dir\Release\navigation.obj
 D:\SOLO-10\85-fms-vnav-calc\src\core\vnav_solver.cpp;D:\SOLO-10\85-fms-vnav-calc\build\FMCSimulator.dir\Release\vnav_solver.obj
+D:\SOLO-10\85-fms-vnav-calc\src\core\bada_atmosphere.cpp;D:\SOLO-10\85-fms-vnav-calc\build\FMCSimulator.dir\Release\bada_atmosphere.obj
+D:\SOLO-10\85-fms-vnav-calc\src\core\bada_aircraft.cpp;D:\SOLO-10\85-fms-vnav-calc\build\FMCSimulator.dir\Release\bada_aircraft.obj
+D:\SOLO-10\85-fms-vnav-calc\src\core\bada_wind.cpp;D:\SOLO-10\85-fms-vnav-calc\build\FMCSimulator.dir\Release\bada_wind.obj
+D:\SOLO-10\85-fms-vnav-calc\src\core\bada_integrator.cpp;D:\SOLO-10\85-fms-vnav-calc\build\FMCSimulator.dir\Release\bada_integrator.obj
 D:\SOLO-10\85-fms-vnav-calc\src\gui\lnav_table.cpp;D:\SOLO-10\85-fms-vnav-calc\build\FMCSimulator.dir\Release\lnav_table.obj
 D:\SOLO-10\85-fms-vnav-calc\src\gui\cdu_widget.cpp;D:\SOLO-10\85-fms-vnav-calc\build\FMCSimulator.dir\Release\cdu_widget.obj
 D:\SOLO-10\85-fms-vnav-calc\src\gui\vnav_profile_widget.cpp;D:\SOLO-10\85-fms-vnav-calc\build\FMCSimulator.dir\Release\vnav_profile_widget.obj

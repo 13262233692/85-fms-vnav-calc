@@ -305,6 +305,30 @@
 			null
 		],
 		[
+			"D:/SOLO-10/85-fms-vnav-calc/src/core/bada_aircraft.h",
+			"MU",
+			"PRMOGMWJPH/moc_bada_aircraft.cpp",
+			null
+		],
+		[
+			"D:/SOLO-10/85-fms-vnav-calc/src/core/bada_atmosphere.h",
+			"MU",
+			"PRMOGMWJPH/moc_bada_atmosphere.cpp",
+			null
+		],
+		[
+			"D:/SOLO-10/85-fms-vnav-calc/src/core/bada_integrator.h",
+			"MU",
+			"PRMOGMWJPH/moc_bada_integrator.cpp",
+			null
+		],
+		[
+			"D:/SOLO-10/85-fms-vnav-calc/src/core/bada_wind.h",
+			"MU",
+			"PRMOGMWJPH/moc_bada_wind.cpp",
+			null
+		],
+		[
 			"D:/SOLO-10/85-fms-vnav-calc/src/core/navigation.h",
 			"MU",
 			"PRMOGMWJPH/moc_navigation.cpp",
@@ -510,6 +534,18 @@
 			"MU",
 			null
 		],
+		[ "D:/SOLO-10/85-fms-vnav-calc/src/core/bada_aircraft.cpp", "MU", null ],
+		[
+			"D:/SOLO-10/85-fms-vnav-calc/src/core/bada_atmosphere.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/SOLO-10/85-fms-vnav-calc/src/core/bada_integrator.cpp",
+			"MU",
+			null
+		],
+		[ "D:/SOLO-10/85-fms-vnav-calc/src/core/bada_wind.cpp", "MU", null ],
 		[ "D:/SOLO-10/85-fms-vnav-calc/src/core/navigation.cpp", "MU", null ],
 		[ "D:/SOLO-10/85-fms-vnav-calc/src/core/vnav_solver.cpp", "MU", null ],
 		[ "D:/SOLO-10/85-fms-vnav-calc/src/gui/cdu_widget.cpp", "MU", null ],

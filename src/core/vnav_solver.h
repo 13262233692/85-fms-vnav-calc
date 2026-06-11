@@ -178,6 +178,11 @@ struct VNAVProfile {
           cruiseAltitudeFt(0.0),
           gradientTruncationApplied(false),
           numConstraintsRelaxed(0) {}
+
+    bool isValid() const {
+        return status == VNAVSolverStatus::Success ||
+               status == VNAVSolverStatus::SuccessWithWarnings;
+    }
 };
 
 class VNAVSolver {

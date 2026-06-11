@@ -1,4 +1,5 @@
 D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/FMCSimulator.dir
+D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/BADAValidationTest.dir
 D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/RUN_TESTS.dir
 D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/INSTALL.dir
 D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/ALL_BUILD.dir

@@ -53,7 +53,19 @@ static constexpr auto qt_meta_stringdata_ZN3fmc3gui9LNAVTableE = QtMocHelpers::s
     "formatAltitude",
     "altitudeFt",
     "formatETA",
-    "minutes"
+    "minutes",
+    "formatTAS",
+    "tasKT",
+    "formatGS",
+    "gsKT",
+    "formatMach",
+    "mach",
+    "formatVS",
+    "vsFpm",
+    "formatEFOB",
+    "fuelKg",
+    "formatFuelFlow",
+    "ffKgMin"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -65,7 +77,7 @@ Q_CONSTINIT static const uint qt_meta_data_ZN3fmc3gui9LNAVTableE[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       8,   14, // methods
+      14,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -73,14 +85,20 @@ Q_CONSTINIT static const uint qt_meta_data_ZN3fmc3gui9LNAVTableE[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   62,    2, 0x0a,    1 /* Public */,
-       3,    1,   63,    2, 0x0a,    2 /* Public */,
-       5,    1,   66,    2, 0x10a,    4 /* Public | MethodIsConst  */,
-       7,    1,   69,    2, 0x10a,    6 /* Public | MethodIsConst  */,
-       9,    1,   72,    2, 0x10a,    8 /* Public | MethodIsConst  */,
-      11,    1,   75,    2, 0x10a,   10 /* Public | MethodIsConst  */,
-      13,    1,   78,    2, 0x10a,   12 /* Public | MethodIsConst  */,
-      15,    1,   81,    2, 0x10a,   14 /* Public | MethodIsConst  */,
+       1,    0,   98,    2, 0x0a,    1 /* Public */,
+       3,    1,   99,    2, 0x0a,    2 /* Public */,
+       5,    1,  102,    2, 0x10a,    4 /* Public | MethodIsConst  */,
+       7,    1,  105,    2, 0x10a,    6 /* Public | MethodIsConst  */,
+       9,    1,  108,    2, 0x10a,    8 /* Public | MethodIsConst  */,
+      11,    1,  111,    2, 0x10a,   10 /* Public | MethodIsConst  */,
+      13,    1,  114,    2, 0x10a,   12 /* Public | MethodIsConst  */,
+      15,    1,  117,    2, 0x10a,   14 /* Public | MethodIsConst  */,
+      17,    1,  120,    2, 0x10a,   16 /* Public | MethodIsConst  */,
+      19,    1,  123,    2, 0x10a,   18 /* Public | MethodIsConst  */,
+      21,    1,  126,    2, 0x10a,   20 /* Public | MethodIsConst  */,
+      23,    1,  129,    2, 0x10a,   22 /* Public | MethodIsConst  */,
+      25,    1,  132,    2, 0x10a,   24 /* Public | MethodIsConst  */,
+      27,    1,  135,    2, 0x10a,   26 /* Public | MethodIsConst  */,
 
  // slots: parameters
     QMetaType::Void,
@@ -91,6 +109,12 @@ Q_CONSTINIT static const uint qt_meta_data_ZN3fmc3gui9LNAVTableE[] = {
     QMetaType::QString, QMetaType::Double,   12,
     QMetaType::QString, QMetaType::Double,   14,
     QMetaType::QString, QMetaType::Double,   16,
+    QMetaType::QString, QMetaType::Double,   18,
+    QMetaType::QString, QMetaType::Double,   20,
+    QMetaType::QString, QMetaType::Double,   22,
+    QMetaType::QString, QMetaType::Double,   24,
+    QMetaType::QString, QMetaType::Double,   26,
+    QMetaType::QString, QMetaType::Double,   28,
 
        0        // eod
 };
@@ -126,6 +150,24 @@ Q_CONSTINIT const QMetaObject fmc::gui::LNAVTable::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<double, std::false_type>,
         // method 'formatETA'
         QtPrivate::TypeAndForceComplete<QString, std::false_type>,
+        QtPrivate::TypeAndForceComplete<double, std::false_type>,
+        // method 'formatTAS'
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
+        QtPrivate::TypeAndForceComplete<double, std::false_type>,
+        // method 'formatGS'
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
+        QtPrivate::TypeAndForceComplete<double, std::false_type>,
+        // method 'formatMach'
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
+        QtPrivate::TypeAndForceComplete<double, std::false_type>,
+        // method 'formatVS'
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
+        QtPrivate::TypeAndForceComplete<double, std::false_type>,
+        // method 'formatEFOB'
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
+        QtPrivate::TypeAndForceComplete<double, std::false_type>,
+        // method 'formatFuelFlow'
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
         QtPrivate::TypeAndForceComplete<double, std::false_type>
     >,
     nullptr
@@ -149,6 +191,18 @@ void fmc::gui::LNAVTable::qt_static_metacall(QObject *_o, QMetaObject::Call _c, 
         case 6: { QString _r = _t->formatAltitude((*reinterpret_cast< std::add_pointer_t<double>>(_a[1])));
             if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = std::move(_r); }  break;
         case 7: { QString _r = _t->formatETA((*reinterpret_cast< std::add_pointer_t<double>>(_a[1])));
+            if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = std::move(_r); }  break;
+        case 8: { QString _r = _t->formatTAS((*reinterpret_cast< std::add_pointer_t<double>>(_a[1])));
+            if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = std::move(_r); }  break;
+        case 9: { QString _r = _t->formatGS((*reinterpret_cast< std::add_pointer_t<double>>(_a[1])));
+            if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = std::move(_r); }  break;
+        case 10: { QString _r = _t->formatMach((*reinterpret_cast< std::add_pointer_t<double>>(_a[1])));
+            if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = std::move(_r); }  break;
+        case 11: { QString _r = _t->formatVS((*reinterpret_cast< std::add_pointer_t<double>>(_a[1])));
+            if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = std::move(_r); }  break;
+        case 12: { QString _r = _t->formatEFOB((*reinterpret_cast< std::add_pointer_t<double>>(_a[1])));
+            if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = std::move(_r); }  break;
+        case 13: { QString _r = _t->formatFuelFlow((*reinterpret_cast< std::add_pointer_t<double>>(_a[1])));
             if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = std::move(_r); }  break;
         default: ;
         }
@@ -174,14 +228,14 @@ int fmc::gui::LNAVTable::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 8)
+        if (_id < 14)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 8;
+        _id -= 14;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 8)
+        if (_id < 14)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 8;
+        _id -= 14;
     }
     return _id;
 }

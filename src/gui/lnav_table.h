@@ -6,6 +6,8 @@
 #include <QColor>
 #include <QFont>
 #include "../core/navigation.h"
+#include "../core/vnav_solver.h"
+#include "../core/bada_integrator.h"
 
 namespace fmc {
 namespace gui {
@@ -19,6 +21,7 @@ public:
 
     void setFlightPlan(const nav::FlightPlan& plan);
     void updateFlightPlan(const nav::FlightPlan& plan);
+    void setTrajectoryResult(const bada::TrajectoryIntegrationResult& result);
     void clearFlightPlan();
 
     void highlightLeg(size_t legIndex);
@@ -39,9 +42,15 @@ public:
         COL_CUMULATIVE = 7,
         COL_TRUE_TRACK = 8,
         COL_MAG_TRACK = 9,
-        COL_ETA = 10,
-        COL_REMARKS = 11,
-        COL_COUNT = 12
+        COL_TAS = 10,
+        COL_GS = 11,
+        COL_MACH = 12,
+        COL_VS = 13,
+        COL_EFOB = 14,
+        COL_FF = 15,
+        COL_ETA = 16,
+        COL_REMARKS = 17,
+        COL_COUNT = 18
     };
 
 public slots:
@@ -54,6 +63,12 @@ public slots:
     QString formatBearing(double bearing) const;
     QString formatAltitude(double altitudeFt) const;
     QString formatETA(double minutes) const;
+    QString formatTAS(double tasKT) const;
+    QString formatGS(double gsKT) const;
+    QString formatMach(double mach) const;
+    QString formatVS(double vsFpm) const;
+    QString formatEFOB(double fuelKg) const;
+    QString formatFuelFlow(double ffKgMin) const;
 
 protected:
     void setupTable();
@@ -61,9 +76,11 @@ protected:
 
 private:
     nav::FlightPlan m_flightPlan;
+    bada::TrajectoryIntegrationResult m_trajectory;
     double m_magneticVariation;
     int m_activeLegIndex;
     bool m_hasValidPlan;
+    bool m_hasTrajectoryData;
 
     static constexpr int ROW_HEIGHT = 28;
     static const QColor HEADER_BG_COLOR;

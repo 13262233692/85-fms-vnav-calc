@@ -1,0 +1,9 @@
+D:\SOLO-10\85-fms-vnav-calc\tests\bada_validation_test.cpp;D:\SOLO-10\85-fms-vnav-calc\build\BADAValidationTest.dir\Release\bada_validation_test.obj
+D:\SOLO-10\85-fms-vnav-calc\src\core\arinc424_parser.cpp;D:\SOLO-10\85-fms-vnav-calc\build\BADAValidationTest.dir\Release\arinc424_parser.obj
+D:\SOLO-10\85-fms-vnav-calc\src\core\navigation.cpp;D:\SOLO-10\85-fms-vnav-calc\build\BADAValidationTest.dir\Release\navigation.obj
+D:\SOLO-10\85-fms-vnav-calc\src\core\vnav_solver.cpp;D:\SOLO-10\85-fms-vnav-calc\build\BADAValidationTest.dir\Release\vnav_solver.obj
+D:\SOLO-10\85-fms-vnav-calc\src\core\bada_atmosphere.cpp;D:\SOLO-10\85-fms-vnav-calc\build\BADAValidationTest.dir\Release\bada_atmosphere.obj
+D:\SOLO-10\85-fms-vnav-calc\src\core\bada_aircraft.cpp;D:\SOLO-10\85-fms-vnav-calc\build\BADAValidationTest.dir\Release\bada_aircraft.obj
+D:\SOLO-10\85-fms-vnav-calc\src\core\bada_wind.cpp;D:\SOLO-10\85-fms-vnav-calc\build\BADAValidationTest.dir\Release\bada_wind.obj
+D:\SOLO-10\85-fms-vnav-calc\src\core\bada_integrator.cpp;D:\SOLO-10\85-fms-vnav-calc\build\BADAValidationTest.dir\Release\bada_integrator.obj
+D:\SOLO-10\85-fms-vnav-calc\build\BADAValidationTest_autogen\mocs_compilation_Release.cpp;D:\SOLO-10\85-fms-vnav-calc\build\BADAValidationTest.dir\Release\mocs_compilation_Release.obj

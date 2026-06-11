@@ -13,8 +13,9 @@ namespace gui {
 
 VNAVProfileWidget::VNAVProfileWidget(QWidget* parent)
     : QWidget(parent),
+      m_hasTrajectoryData(false),
       m_marginLeft(70),
-      m_marginRight(20),
+      m_marginRight(70),
       m_marginTop(30),
       m_marginBottom(50),
       m_plotAreaX(0),
@@ -23,8 +24,10 @@ VNAVProfileWidget::VNAVProfileWidget(QWidget* parent)
       m_plotAreaH(0),
       m_xRangeNm(0.0),
       m_yRangeFt(0.0),
+      m_y2RangeKg(0.0),
       m_xMinNm(0.0),
-      m_yMinFt(0.0) {
+      m_yMinFt(0.0),
+      m_y2MinKg(0.0) {
     setMinimumSize(minimumSizeHint());
     setMouseTracking(true);
 }
@@ -38,9 +41,19 @@ void VNAVProfileWidget::setVNAVProfile(const nav::VNAVProfile& profile) {
     update();
 }
 
+void VNAVProfileWidget::setTrajectoryResult(const bada::TrajectoryIntegrationResult& result) {
+    m_trajectory = result;
+    m_hasTrajectoryData = result.success && !result.legs.empty();
+    recalcPlotGeometry();
+    update();
+}
+
 void VNAVProfileWidget::clearProfile() {
     m_profile = nav::VNAVProfile();
+    m_trajectory = bada::TrajectoryIntegrationResult();
+    m_hasTrajectoryData = false;
     m_profilePoints.clear();
+    m_fuelCurvePoints.clear();
     m_waypointLabels.clear();
     update();
 }
@@ -87,6 +100,39 @@ void VNAVProfileWidget::recalcPlotGeometry() {
         m_waypointLabels.push_back(qMakePair(
             QString::fromStdString(wp.waypointIdentifier), sp));
     }
+
+    if (m_hasTrajectoryData && !m_trajectory.legs.empty()) {
+        m_y2MinKg = 0.0;
+        double maxFuel = 0.0;
+        for (const auto& leg : m_trajectory.legs) {
+            maxFuel = std::max(maxFuel, leg.fuelRemainingKg);
+        }
+        m_y2RangeKg = maxFuel * 1.1;
+        if (m_y2RangeKg <= 1000.0) m_y2RangeKg = 10000.0;
+
+        m_fuelCurvePoints.clear();
+        double cumulativeDistNm = 0.0;
+        if (!m_trajectory.legs.empty()) {
+            const auto& firstLeg = m_trajectory.legs[0];
+            m_fuelCurvePoints.push_back(toScreenFuel(0.0, firstLeg.fuelRemainingKg + firstLeg.fuelBurnedKg));
+        }
+        for (const auto& leg : m_trajectory.legs) {
+            cumulativeDistNm += leg.totalDistanceNm;
+            m_fuelCurvePoints.push_back(toScreenFuel(cumulativeDistNm, leg.fuelRemainingKg));
+        }
+    } else {
+        m_fuelCurvePoints.clear();
+    }
+}
+
+QPointF VNAVProfileWidget::toScreenFuel(double distanceNm, double fuelKg) const {
+    double xNorm = (distanceNm - m_xMinNm) / m_xRangeNm;
+    double yNorm = (fuelKg - m_y2MinKg) / m_y2RangeKg;
+
+    double sx = m_plotAreaX + xNorm * m_plotAreaW;
+    double sy = m_plotAreaY + (1.0 - yNorm) * m_plotAreaH;
+
+    return QPointF(sx, sy);
 }
 
 QPointF VNAVProfileWidget::toScreen(double distanceNm, double altitudeFt) const {
@@ -194,6 +240,84 @@ void VNAVProfileWidget::drawGrid(QPainter& p) {
     }
 }
 
+void VNAVProfileWidget::drawFuelAxis(QPainter& p) {
+    if (!m_hasTrajectoryData) return;
+
+    p.setPen(QPen(QColor(0xFF, 0xA0, 0x00), 2));
+
+    QFont labelFont;
+    labelFont.setPixelSize(11);
+    labelFont.setBold(true);
+    p.setFont(labelFont);
+    p.setPen(QColor(0xFF, 0xA0, 0x00));
+
+    p.save();
+    p.translate(width() - 15, m_plotAreaY + m_plotAreaH / 2);
+    p.rotate(90);
+    p.drawText(QRect(-80, -10, 160, 20), Qt::AlignCenter, "FUEL (KG)");
+    p.restore();
+
+    p.setPen(QPen(QColor(0xFF, 0x80, 0x00, 0x60), 1, Qt::DashLine));
+    int numY2Lines = 4;
+    for (int i = 0; i <= numY2Lines; ++i) {
+        double fuelKg = m_y2MinKg + (double(i) / double(numY2Lines)) * m_y2RangeKg;
+        QPointF left = toScreenFuel(m_xMinNm, fuelKg);
+        QPointF right = toScreenFuel(m_xMinNm + m_xRangeNm, fuelKg);
+        p.drawLine(left, right);
+
+        p.setPen(QColor(0xFF, 0xA0, 0x00));
+        QFont f = p.font();
+        f.setPixelSize(10);
+        f.setBold(false);
+        p.setFont(f);
+        QString label = QString::number(std::round(fuelKg / 1000.0) * 1000.0, 'f', 0);
+        p.drawText(QRect(m_plotAreaX + m_plotAreaW + 6, int(left.y()) - 8,
+                         m_marginRight - 10, 16),
+                   Qt::AlignLeft | Qt::AlignVCenter, label);
+        p.setPen(QPen(QColor(0xFF, 0x80, 0x00, 0x60), 1, Qt::DashLine));
+    }
+}
+
+void VNAVProfileWidget::drawFuelCurve(QPainter& p) {
+    if (m_fuelCurvePoints.size() < 2) return;
+
+    QPainterPath path;
+    path.moveTo(m_fuelCurvePoints[0]);
+
+    for (int i = 1; i < m_fuelCurvePoints.size(); ++i) {
+        path.lineTo(m_fuelCurvePoints[i]);
+    }
+
+    QPainterPath fillPath = path;
+    fillPath.lineTo(toScreenFuel(m_xMinNm + m_xRangeNm, m_y2MinKg));
+    fillPath.lineTo(toScreenFuel(m_xMinNm, m_y2MinKg));
+    fillPath.closeSubpath();
+
+    QColor fillBase(0xFF, 0xA0, 0x00, 0x25);
+    QBrush fillBrush(fillBase);
+    p.fillPath(fillPath, fillBrush);
+
+    QPen linePen(QColor(0xFF, 0xA0, 0x00), 3);
+    linePen.setJoinStyle(Qt::RoundJoin);
+    linePen.setCapStyle(Qt::RoundCap);
+    p.setPen(linePen);
+    p.drawPath(path);
+
+    if (!m_trajectory.legs.empty() && m_hasTrajectoryData) {
+        p.setPen(QColor(0xFF, 0xD0, 0x80));
+        QFont f; f.setPixelSize(10); f.setBold(true); p.setFont(f);
+
+        const auto& first = m_trajectory.legs.front();
+        const auto& last = m_trajectory.legs.back();
+
+        QString fuelInfo = QString("BURN: %1 KG | REM: %2 KG")
+                              .arg(static_cast<quint64>(m_trajectory.totalFuelBurnKg))
+                              .arg(static_cast<quint64>(last.fuelRemainingKg));
+        p.drawText(QRect(m_plotAreaX, m_plotAreaY + m_plotAreaH + 4,
+                         m_plotAreaW, 16), Qt::AlignCenter, fuelInfo);
+    }
+}
+
 void VNAVProfileWidget::drawAxes(QPainter& p) {
     p.setPen(QPen(QColor(0x00, 0xFF, 0xFF), 2));
 
@@ -217,8 +341,11 @@ void VNAVProfileWidget::drawAxes(QPainter& p) {
     titleFont.setPixelSize(12);
     titleFont.setBold(true);
     p.setFont(titleFont);
-    p.drawText(QRect(m_plotAreaX, 2, m_plotAreaW, 24), Qt::AlignCenter,
-               "VNAV VERTICAL PROFILE - " + QString::number(m_profile.cruiseAltitudeFt, 'f', 0) + "FT CRZ");
+    QString titleStr = "VNAV VERTICAL PROFILE - " + QString::number(m_profile.cruiseAltitudeFt, 'f', 0) + "FT CRZ";
+    if (m_hasTrajectoryData && !m_trajectory.legs.empty()) {
+        titleStr += " | BADA AERODYNAMICS INTEGRATED";
+    }
+    p.drawText(QRect(m_plotAreaX, 2, m_plotAreaW, 24), Qt::AlignCenter, titleStr);
 }
 
 void VNAVProfileWidget::drawProfileLine(QPainter& p) {
@@ -408,8 +535,10 @@ void VNAVProfileWidget::paintEvent(QPaintEvent* /*event*/) {
     }
 
     drawGrid(p);
+    drawFuelAxis(p);
     drawConstraintMarkers(p);
     drawTOD_TOC(p);
+    drawFuelCurve(p);
     drawProfileLine(p);
     drawWaypoints(p);
     drawPhaseLabels(p);

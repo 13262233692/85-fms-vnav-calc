@@ -35,18 +35,6 @@ events:
     found: "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\DiagnosticsHub\\Collector"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
-        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\tools\\\\trae-gopls\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\workspaces\\\\e4694819\\\\versions\\\\node\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\versions\\\\node\\\\current"
@@ -82,18 +70,6 @@ events:
         - "C:\\Users\\ZhuanZ\\AppData\\Roaming\\npm"
         - "C:\\Users\\ZhuanZ\\.local\\bin\\"
         - "c:\\Users\\ZhuanZ\\AppData\\Local\\Programs\\Trae CN\\resources\\app\\node_modules\\@vscode\\ripgrep\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\vcpkg"
-      ENV{INCLUDE}:
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\include"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Auxiliary\\VS\\include"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\ucrt"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.26100.0\\\\um"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.26100.0\\\\shared"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.26100.0\\\\winrt"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.26100.0\\\\cppwinrt"
   -
     kind: "message-v1"
     backtrace:
@@ -110,7 +86,7 @@ events:
       The output was:
       0
       閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.14.40+3e7442088
-      鐢熸垚鍚姩鏃堕棿涓?2026/6/11 11:31:21銆?
+      鐢熸垚鍚姩鏃堕棿涓?2026/6/11 13:43:07銆?
       
       鑺傜偣 1 涓婄殑椤圭洰鈥淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\4.3.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj鈥?榛樿鐩爣)銆?
       PrepareForBuild:
@@ -139,7 +115,7 @@ events:
           0 涓鍛?
           0 涓敊璇?
       
-      宸茬敤鏃堕棿 00:00:00.85
+      宸茬敤鏃堕棿 00:00:02.60
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -172,17 +148,6 @@ events:
       - "link"
     candidate_directories:
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/vcpackages/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/Roslyn/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Team Tools/DiagnosticsHub/Collector/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/"
-      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/"
       - "C:/Users/ZhuanZ/.trae-cn/tools/trae-gopls/current/"
       - "C:/Users/ZhuanZ/.trae-cn/sdks/workspaces/e4694819/versions/node/current/"
       - "C:/Users/ZhuanZ/.trae-cn/sdks/versions/node/current/"
@@ -213,27 +178,11 @@ events:
       - "C:/Users/ZhuanZ/AppData/Roaming/npm/"
       - "C:/Users/ZhuanZ/.local/bin/"
       - "C:/Users/ZhuanZ/AppData/Local/Programs/Trae CN/resources/app/node_modules/@vscode/ripgrep/bin/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/vcpkg/"
     searched_directories:
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
     found: "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\DiagnosticsHub\\Collector"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
-        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\tools\\\\trae-gopls\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\workspaces\\\\e4694819\\\\versions\\\\node\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\versions\\\\node\\\\current"
@@ -269,10 +218,6 @@ events:
         - "C:\\Users\\ZhuanZ\\AppData\\Roaming\\npm"
         - "C:\\Users\\ZhuanZ\\.local\\bin\\"
         - "c:\\Users\\ZhuanZ\\AppData\\Local\\Programs\\Trae CN\\resources\\app\\node_modules\\@vscode\\ripgrep\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\vcpkg"
   -
     kind: "find-v1"
     backtrace:
@@ -296,17 +241,6 @@ events:
       - "lld-link"
     candidate_directories:
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/vcpackages/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/Roslyn/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Team Tools/DiagnosticsHub/Collector/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/"
-      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/"
       - "C:/Users/ZhuanZ/.trae-cn/tools/trae-gopls/current/"
       - "C:/Users/ZhuanZ/.trae-cn/sdks/workspaces/e4694819/versions/node/current/"
       - "C:/Users/ZhuanZ/.trae-cn/sdks/versions/node/current/"
@@ -337,47 +271,10 @@ events:
       - "C:/Users/ZhuanZ/AppData/Roaming/npm/"
       - "C:/Users/ZhuanZ/.local/bin/"
       - "C:/Users/ZhuanZ/AppData/Local/Programs/Trae CN/resources/app/node_modules/@vscode/ripgrep/bin/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/vcpkg/"
     searched_directories:
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/vcpackages/lld-link.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/vcpackages/lld-link.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/vcpackages/lld-link"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/TestWindow/lld-link.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/TestWindow/lld-link.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/TestWindow/lld-link"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/Roslyn/lld-link.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/Roslyn/lld-link.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/Roslyn/lld-link"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Team Tools/DiagnosticsHub/Collector/lld-link.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Team Tools/DiagnosticsHub/Collector/lld-link.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Team Tools/DiagnosticsHub/Collector/lld-link"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/lld-link.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/lld-link.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/lld-link"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/lld-link.com"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/lld-link.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/lld-link"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/lld-link.com"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/lld-link.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/lld-link"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/lld-link.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/lld-link.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/lld-link"
-      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/lld-link.com"
-      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/lld-link.exe"
-      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/lld-link"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/lld-link.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/lld-link.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/lld-link"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/lld-link.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/lld-link.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/lld-link"
       - "C:/Users/ZhuanZ/.trae-cn/tools/trae-gopls/current/lld-link.com"
       - "C:/Users/ZhuanZ/.trae-cn/tools/trae-gopls/current/lld-link.exe"
       - "C:/Users/ZhuanZ/.trae-cn/tools/trae-gopls/current/lld-link"
@@ -468,33 +365,9 @@ events:
       - "C:/Users/ZhuanZ/AppData/Local/Programs/Trae CN/resources/app/node_modules/@vscode/ripgrep/bin/lld-link.com"
       - "C:/Users/ZhuanZ/AppData/Local/Programs/Trae CN/resources/app/node_modules/@vscode/ripgrep/bin/lld-link.exe"
       - "C:/Users/ZhuanZ/AppData/Local/Programs/Trae CN/resources/app/node_modules/@vscode/ripgrep/bin/lld-link"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/lld-link.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/lld-link.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/lld-link"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/lld-link.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/lld-link.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/lld-link"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/lld-link.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/lld-link.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/lld-link"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/vcpkg/lld-link.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/vcpkg/lld-link.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/vcpkg/lld-link"
     found: false
     search_context:
       ENV{PATH}:
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\DiagnosticsHub\\Collector"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
-        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\tools\\\\trae-gopls\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\workspaces\\\\e4694819\\\\versions\\\\node\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\versions\\\\node\\\\current"
@@ -530,10 +403,6 @@ events:
         - "C:\\Users\\ZhuanZ\\AppData\\Roaming\\npm"
         - "C:\\Users\\ZhuanZ\\.local\\bin\\"
         - "c:\\Users\\ZhuanZ\\AppData\\Local\\Programs\\Trae CN\\resources\\app\\node_modules\\@vscode\\ripgrep\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\vcpkg"
   -
     kind: "find-v1"
     backtrace:
@@ -555,17 +424,6 @@ events:
       - "link"
     candidate_directories:
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/vcpackages/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/Roslyn/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Team Tools/DiagnosticsHub/Collector/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/"
-      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/"
       - "C:/Users/ZhuanZ/.trae-cn/tools/trae-gopls/current/"
       - "C:/Users/ZhuanZ/.trae-cn/sdks/workspaces/e4694819/versions/node/current/"
       - "C:/Users/ZhuanZ/.trae-cn/sdks/versions/node/current/"
@@ -596,27 +454,11 @@ events:
       - "C:/Users/ZhuanZ/AppData/Roaming/npm/"
       - "C:/Users/ZhuanZ/.local/bin/"
       - "C:/Users/ZhuanZ/AppData/Local/Programs/Trae CN/resources/app/node_modules/@vscode/ripgrep/bin/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/vcpkg/"
     searched_directories:
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
     found: "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\DiagnosticsHub\\Collector"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
-        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\tools\\\\trae-gopls\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\workspaces\\\\e4694819\\\\versions\\\\node\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\versions\\\\node\\\\current"
@@ -652,10 +494,6 @@ events:
         - "C:\\Users\\ZhuanZ\\AppData\\Roaming\\npm"
         - "C:\\Users\\ZhuanZ\\.local\\bin\\"
         - "c:\\Users\\ZhuanZ\\AppData\\Local\\Programs\\Trae CN\\resources\\app\\node_modules\\@vscode\\ripgrep\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\vcpkg"
   -
     kind: "find-v1"
     backtrace:
@@ -677,17 +515,6 @@ events:
       - "mt"
     candidate_directories:
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/vcpackages/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/Roslyn/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Team Tools/DiagnosticsHub/Collector/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/"
-      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/"
       - "C:/Users/ZhuanZ/.trae-cn/tools/trae-gopls/current/"
       - "C:/Users/ZhuanZ/.trae-cn/sdks/workspaces/e4694819/versions/node/current/"
       - "C:/Users/ZhuanZ/.trae-cn/sdks/versions/node/current/"
@@ -718,45 +545,103 @@ events:
       - "C:/Users/ZhuanZ/AppData/Roaming/npm/"
       - "C:/Users/ZhuanZ/.local/bin/"
       - "C:/Users/ZhuanZ/AppData/Local/Programs/Trae CN/resources/app/node_modules/@vscode/ripgrep/bin/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/vcpkg/"
     searched_directories:
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.com"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.exe"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/vcpackages/mt.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/vcpackages/mt.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/vcpackages/mt"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/TestWindow/mt.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/TestWindow/mt.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/TestWindow/mt"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/Roslyn/mt.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/Roslyn/mt.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/Roslyn/mt"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Team Tools/DiagnosticsHub/Collector/mt.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Team Tools/DiagnosticsHub/Collector/mt.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Team Tools/DiagnosticsHub/Collector/mt"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/mt.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/mt.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/mt"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/mt.com"
-    found: "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/mt.exe"
+      - "C:/Users/ZhuanZ/.trae-cn/tools/trae-gopls/current/mt.com"
+      - "C:/Users/ZhuanZ/.trae-cn/tools/trae-gopls/current/mt.exe"
+      - "C:/Users/ZhuanZ/.trae-cn/tools/trae-gopls/current/mt"
+      - "C:/Users/ZhuanZ/.trae-cn/sdks/workspaces/e4694819/versions/node/current/mt.com"
+      - "C:/Users/ZhuanZ/.trae-cn/sdks/workspaces/e4694819/versions/node/current/mt.exe"
+      - "C:/Users/ZhuanZ/.trae-cn/sdks/workspaces/e4694819/versions/node/current/mt"
+      - "C:/Users/ZhuanZ/.trae-cn/sdks/versions/node/current/mt.com"
+      - "C:/Users/ZhuanZ/.trae-cn/sdks/versions/node/current/mt.exe"
+      - "C:/Users/ZhuanZ/.trae-cn/sdks/versions/node/current/mt"
+      - "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.3/bin/x64/mt.com"
+      - "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.3/bin/x64/mt.exe"
+      - "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.3/bin/x64/mt"
+      - "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.3/bin/mt.com"
+      - "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.3/bin/mt.exe"
+      - "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.3/bin/mt"
+      - "C:/Program Files/Microsoft MPI/Bin/mt.com"
+      - "C:/Program Files/Microsoft MPI/Bin/mt.exe"
+      - "C:/Program Files/Microsoft MPI/Bin/mt"
+      - "C:/Windows/System32/mt.com"
+      - "C:/Windows/System32/mt.exe"
+      - "C:/Windows/System32/mt"
+      - "C:/Windows/mt.com"
+      - "C:/Windows/mt.exe"
+      - "C:/Windows/mt"
+      - "C:/Windows/System32/wbem/mt.com"
+      - "C:/Windows/System32/wbem/mt.exe"
+      - "C:/Windows/System32/wbem/mt"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt"
+      - "C:/Windows/System32/OpenSSH/mt.com"
+      - "C:/Windows/System32/OpenSSH/mt.exe"
+      - "C:/Windows/System32/OpenSSH/mt"
+      - "C:/Program Files/dotnet/mt.com"
+      - "C:/Program Files/dotnet/mt.exe"
+      - "C:/Program Files/dotnet/mt"
+      - "C:/Users/ZhuanZ/AppData/Local/nvm/mt.com"
+      - "C:/Users/ZhuanZ/AppData/Local/nvm/mt.exe"
+      - "C:/Users/ZhuanZ/AppData/Local/nvm/mt"
+      - "C:/nvm4w/nodejs/mt.com"
+      - "C:/nvm4w/nodejs/mt.exe"
+      - "C:/nvm4w/nodejs/mt"
+      - "C:/Program Files/Go/bin/mt.com"
+      - "C:/Program Files/Go/bin/mt.exe"
+      - "C:/Program Files/Go/bin/mt"
+      - "C:/Program Files/Git/cmd/mt.com"
+      - "C:/Program Files/Git/cmd/mt.exe"
+      - "C:/Program Files/Git/cmd/mt"
+      - "C:/Program Files/nodejs/mt.com"
+      - "C:/Program Files/nodejs/mt.exe"
+      - "C:/Program Files/nodejs/mt"
+      - "C:/Program Files/GitHub CLI/mt.com"
+      - "C:/Program Files/GitHub CLI/mt.exe"
+      - "C:/Program Files/GitHub CLI/mt"
+      - "C:/Program Files/CMake/bin/mt.com"
+      - "C:/Program Files/CMake/bin/mt.exe"
+      - "C:/Program Files/CMake/bin/mt"
+      - "C:/Program Files/NVIDIA Corporation/Nsight Compute 2026.2.0/mt.com"
+      - "C:/Program Files/NVIDIA Corporation/Nsight Compute 2026.2.0/mt.exe"
+      - "C:/Program Files/NVIDIA Corporation/Nsight Compute 2026.2.0/mt"
+      - "C:/Users/ZhuanZ/.cargo/bin/mt.com"
+      - "C:/Users/ZhuanZ/.cargo/bin/mt.exe"
+      - "C:/Users/ZhuanZ/.cargo/bin/mt"
+      - "C:/Users/ZhuanZ/AppData/Local/Programs/Python/Python312/Scripts/mt.com"
+      - "C:/Users/ZhuanZ/AppData/Local/Programs/Python/Python312/Scripts/mt.exe"
+      - "C:/Users/ZhuanZ/AppData/Local/Programs/Python/Python312/Scripts/mt"
+      - "C:/Users/ZhuanZ/AppData/Local/Programs/Python/Python312/mt.com"
+      - "C:/Users/ZhuanZ/AppData/Local/Programs/Python/Python312/mt.exe"
+      - "C:/Users/ZhuanZ/AppData/Local/Programs/Python/Python312/mt"
+      - "C:/Users/ZhuanZ/AppData/Local/Programs/Python/Launcher/mt.com"
+      - "C:/Users/ZhuanZ/AppData/Local/Programs/Python/Launcher/mt.exe"
+      - "C:/Users/ZhuanZ/AppData/Local/Programs/Python/Launcher/mt"
+      - "C:/Users/ZhuanZ/AppData/Local/Microsoft/WindowsApps/mt.com"
+      - "C:/Users/ZhuanZ/AppData/Local/Microsoft/WindowsApps/mt.exe"
+      - "C:/Users/ZhuanZ/AppData/Local/Microsoft/WindowsApps/mt"
+      - "C:/Users/ZhuanZ/go/bin/mt.com"
+      - "C:/Users/ZhuanZ/go/bin/mt.exe"
+      - "C:/Users/ZhuanZ/go/bin/mt"
+      - "C:/Users/ZhuanZ/AppData/Local/Programs/Microsoft VS Code/bin/mt.com"
+      - "C:/Users/ZhuanZ/AppData/Local/Programs/Microsoft VS Code/bin/mt.exe"
+      - "C:/Users/ZhuanZ/AppData/Local/Programs/Microsoft VS Code/bin/mt"
+      - "C:/Users/ZhuanZ/AppData/Roaming/npm/mt.com"
+      - "C:/Users/ZhuanZ/AppData/Roaming/npm/mt.exe"
+      - "C:/Users/ZhuanZ/AppData/Roaming/npm/mt"
+      - "C:/Users/ZhuanZ/.local/bin/mt.com"
+      - "C:/Users/ZhuanZ/.local/bin/mt.exe"
+      - "C:/Users/ZhuanZ/.local/bin/mt"
+      - "C:/Users/ZhuanZ/AppData/Local/Programs/Trae CN/resources/app/node_modules/@vscode/ripgrep/bin/mt.com"
+      - "C:/Users/ZhuanZ/AppData/Local/Programs/Trae CN/resources/app/node_modules/@vscode/ripgrep/bin/mt.exe"
+      - "C:/Users/ZhuanZ/AppData/Local/Programs/Trae CN/resources/app/node_modules/@vscode/ripgrep/bin/mt"
+    found: false
     search_context:
       ENV{PATH}:
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\DiagnosticsHub\\Collector"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
-        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\tools\\\\trae-gopls\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\workspaces\\\\e4694819\\\\versions\\\\node\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\versions\\\\node\\\\current"
@@ -792,10 +677,6 @@ events:
         - "C:\\Users\\ZhuanZ\\AppData\\Roaming\\npm"
         - "C:\\Users\\ZhuanZ\\.local\\bin\\"
         - "c:\\Users\\ZhuanZ\\AppData\\Local\\Programs\\Trae CN\\resources\\app\\node_modules\\@vscode\\ripgrep\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\vcpkg"
   -
     kind: "find-v1"
     backtrace:
@@ -817,17 +698,6 @@ events:
       - "lib"
     candidate_directories:
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/vcpackages/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/Roslyn/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Team Tools/DiagnosticsHub/Collector/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/"
-      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/"
       - "C:/Users/ZhuanZ/.trae-cn/tools/trae-gopls/current/"
       - "C:/Users/ZhuanZ/.trae-cn/sdks/workspaces/e4694819/versions/node/current/"
       - "C:/Users/ZhuanZ/.trae-cn/sdks/versions/node/current/"
@@ -858,27 +728,11 @@ events:
       - "C:/Users/ZhuanZ/AppData/Roaming/npm/"
       - "C:/Users/ZhuanZ/.local/bin/"
       - "C:/Users/ZhuanZ/AppData/Local/Programs/Trae CN/resources/app/node_modules/@vscode/ripgrep/bin/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/vcpkg/"
     searched_directories:
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.com"
     found: "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\DiagnosticsHub\\Collector"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
-        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\tools\\\\trae-gopls\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\workspaces\\\\e4694819\\\\versions\\\\node\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\versions\\\\node\\\\current"
@@ -914,10 +768,6 @@ events:
         - "C:\\Users\\ZhuanZ\\AppData\\Roaming\\npm"
         - "C:\\Users\\ZhuanZ\\.local\\bin\\"
         - "c:\\Users\\ZhuanZ\\AppData\\Local\\Programs\\Trae CN\\resources\\app\\node_modules\\@vscode\\ripgrep\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\vcpkg"
   -
     kind: "find-v1"
     backtrace:
@@ -941,18 +791,6 @@ events:
     names:
       - "rc"
     candidate_directories:
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/vcpackages/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/Roslyn/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Team Tools/DiagnosticsHub/Collector/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/"
-      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/"
       - "C:/Users/ZhuanZ/.trae-cn/tools/trae-gopls/current/"
       - "C:/Users/ZhuanZ/.trae-cn/sdks/workspaces/e4694819/versions/node/current/"
       - "C:/Users/ZhuanZ/.trae-cn/sdks/versions/node/current/"
@@ -983,10 +821,6 @@ events:
       - "C:/Users/ZhuanZ/AppData/Roaming/npm/"
       - "C:/Users/ZhuanZ/.local/bin/"
       - "C:/Users/ZhuanZ/AppData/Local/Programs/Trae CN/resources/app/node_modules/@vscode/ripgrep/bin/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/vcpkg/"
       - "C:/Program Files/bin/"
       - "C:/Program Files/sbin/"
       - "C:/Program Files/"
@@ -1000,40 +834,135 @@ events:
       - "C:/Program Files/FMCSimulator/sbin/"
       - "C:/Program Files/FMCSimulator/"
     searched_directories:
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/rc.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/rc.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/rc"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/vcpackages/rc.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/vcpackages/rc.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/vcpackages/rc"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/TestWindow/rc.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/TestWindow/rc.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/TestWindow/rc"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/Roslyn/rc.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/Roslyn/rc.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/Roslyn/rc"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Team Tools/DiagnosticsHub/Collector/rc.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Team Tools/DiagnosticsHub/Collector/rc.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Team Tools/DiagnosticsHub/Collector/rc"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/rc.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/rc.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/rc"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/rc.com"
-    found: "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/rc.exe"
+      - "C:/Users/ZhuanZ/.trae-cn/tools/trae-gopls/current/rc.com"
+      - "C:/Users/ZhuanZ/.trae-cn/tools/trae-gopls/current/rc.exe"
+      - "C:/Users/ZhuanZ/.trae-cn/tools/trae-gopls/current/rc"
+      - "C:/Users/ZhuanZ/.trae-cn/sdks/workspaces/e4694819/versions/node/current/rc.com"
+      - "C:/Users/ZhuanZ/.trae-cn/sdks/workspaces/e4694819/versions/node/current/rc.exe"
+      - "C:/Users/ZhuanZ/.trae-cn/sdks/workspaces/e4694819/versions/node/current/rc"
+      - "C:/Users/ZhuanZ/.trae-cn/sdks/versions/node/current/rc.com"
+      - "C:/Users/ZhuanZ/.trae-cn/sdks/versions/node/current/rc.exe"
+      - "C:/Users/ZhuanZ/.trae-cn/sdks/versions/node/current/rc"
+      - "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.3/bin/x64/rc.com"
+      - "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.3/bin/x64/rc.exe"
+      - "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.3/bin/x64/rc"
+      - "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.3/bin/rc.com"
+      - "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.3/bin/rc.exe"
+      - "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.3/bin/rc"
+      - "C:/Program Files/Microsoft MPI/Bin/rc.com"
+      - "C:/Program Files/Microsoft MPI/Bin/rc.exe"
+      - "C:/Program Files/Microsoft MPI/Bin/rc"
+      - "C:/Windows/System32/rc.com"
+      - "C:/Windows/System32/rc.exe"
+      - "C:/Windows/System32/rc"
+      - "C:/Windows/rc.com"
+      - "C:/Windows/rc.exe"
+      - "C:/Windows/rc"
+      - "C:/Windows/System32/wbem/rc.com"
+      - "C:/Windows/System32/wbem/rc.exe"
+      - "C:/Windows/System32/wbem/rc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc"
+      - "C:/Windows/System32/OpenSSH/rc.com"
+      - "C:/Windows/System32/OpenSSH/rc.exe"
+      - "C:/Windows/System32/OpenSSH/rc"
+      - "C:/Program Files/dotnet/rc.com"
+      - "C:/Program Files/dotnet/rc.exe"
+      - "C:/Program Files/dotnet/rc"
+      - "C:/Users/ZhuanZ/AppData/Local/nvm/rc.com"
+      - "C:/Users/ZhuanZ/AppData/Local/nvm/rc.exe"
+      - "C:/Users/ZhuanZ/AppData/Local/nvm/rc"
+      - "C:/nvm4w/nodejs/rc.com"
+      - "C:/nvm4w/nodejs/rc.exe"
+      - "C:/nvm4w/nodejs/rc"
+      - "C:/Program Files/Go/bin/rc.com"
+      - "C:/Program Files/Go/bin/rc.exe"
+      - "C:/Program Files/Go/bin/rc"
+      - "C:/Program Files/Git/cmd/rc.com"
+      - "C:/Program Files/Git/cmd/rc.exe"
+      - "C:/Program Files/Git/cmd/rc"
+      - "C:/Program Files/nodejs/rc.com"
+      - "C:/Program Files/nodejs/rc.exe"
+      - "C:/Program Files/nodejs/rc"
+      - "C:/Program Files/GitHub CLI/rc.com"
+      - "C:/Program Files/GitHub CLI/rc.exe"
+      - "C:/Program Files/GitHub CLI/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Program Files/NVIDIA Corporation/Nsight Compute 2026.2.0/rc.com"
+      - "C:/Program Files/NVIDIA Corporation/Nsight Compute 2026.2.0/rc.exe"
+      - "C:/Program Files/NVIDIA Corporation/Nsight Compute 2026.2.0/rc"
+      - "C:/Users/ZhuanZ/.cargo/bin/rc.com"
+      - "C:/Users/ZhuanZ/.cargo/bin/rc.exe"
+      - "C:/Users/ZhuanZ/.cargo/bin/rc"
+      - "C:/Users/ZhuanZ/AppData/Local/Programs/Python/Python312/Scripts/rc.com"
+      - "C:/Users/ZhuanZ/AppData/Local/Programs/Python/Python312/Scripts/rc.exe"
+      - "C:/Users/ZhuanZ/AppData/Local/Programs/Python/Python312/Scripts/rc"
+      - "C:/Users/ZhuanZ/AppData/Local/Programs/Python/Python312/rc.com"
+      - "C:/Users/ZhuanZ/AppData/Local/Programs/Python/Python312/rc.exe"
+      - "C:/Users/ZhuanZ/AppData/Local/Programs/Python/Python312/rc"
+      - "C:/Users/ZhuanZ/AppData/Local/Programs/Python/Launcher/rc.com"
+      - "C:/Users/ZhuanZ/AppData/Local/Programs/Python/Launcher/rc.exe"
+      - "C:/Users/ZhuanZ/AppData/Local/Programs/Python/Launcher/rc"
+      - "C:/Users/ZhuanZ/AppData/Local/Microsoft/WindowsApps/rc.com"
+      - "C:/Users/ZhuanZ/AppData/Local/Microsoft/WindowsApps/rc.exe"
+      - "C:/Users/ZhuanZ/AppData/Local/Microsoft/WindowsApps/rc"
+      - "C:/Users/ZhuanZ/go/bin/rc.com"
+      - "C:/Users/ZhuanZ/go/bin/rc.exe"
+      - "C:/Users/ZhuanZ/go/bin/rc"
+      - "C:/Users/ZhuanZ/AppData/Local/Programs/Microsoft VS Code/bin/rc.com"
+      - "C:/Users/ZhuanZ/AppData/Local/Programs/Microsoft VS Code/bin/rc.exe"
+      - "C:/Users/ZhuanZ/AppData/Local/Programs/Microsoft VS Code/bin/rc"
+      - "C:/Users/ZhuanZ/AppData/Roaming/npm/rc.com"
+      - "C:/Users/ZhuanZ/AppData/Roaming/npm/rc.exe"
+      - "C:/Users/ZhuanZ/AppData/Roaming/npm/rc"
+      - "C:/Users/ZhuanZ/.local/bin/rc.com"
+      - "C:/Users/ZhuanZ/.local/bin/rc.exe"
+      - "C:/Users/ZhuanZ/.local/bin/rc"
+      - "C:/Users/ZhuanZ/AppData/Local/Programs/Trae CN/resources/app/node_modules/@vscode/ripgrep/bin/rc.com"
+      - "C:/Users/ZhuanZ/AppData/Local/Programs/Trae CN/resources/app/node_modules/@vscode/ripgrep/bin/rc.exe"
+      - "C:/Users/ZhuanZ/AppData/Local/Programs/Trae CN/resources/app/node_modules/@vscode/ripgrep/bin/rc"
+      - "C:/Program Files/bin/rc.com"
+      - "C:/Program Files/bin/rc.exe"
+      - "C:/Program Files/bin/rc"
+      - "C:/Program Files/sbin/rc.com"
+      - "C:/Program Files/sbin/rc.exe"
+      - "C:/Program Files/sbin/rc"
+      - "C:/Program Files/rc.com"
+      - "C:/Program Files/rc.exe"
+      - "C:/Program Files/rc"
+      - "C:/Program Files (x86)/bin/rc.com"
+      - "C:/Program Files (x86)/bin/rc.exe"
+      - "C:/Program Files (x86)/bin/rc"
+      - "C:/Program Files (x86)/sbin/rc.com"
+      - "C:/Program Files (x86)/sbin/rc.exe"
+      - "C:/Program Files (x86)/sbin/rc"
+      - "C:/Program Files (x86)/rc.com"
+      - "C:/Program Files (x86)/rc.exe"
+      - "C:/Program Files (x86)/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Program Files/CMake/sbin/rc.com"
+      - "C:/Program Files/CMake/sbin/rc.exe"
+      - "C:/Program Files/CMake/sbin/rc"
+      - "C:/Program Files/CMake/rc.com"
+      - "C:/Program Files/CMake/rc.exe"
+      - "C:/Program Files/CMake/rc"
+      - "C:/Program Files/FMCSimulator/bin/rc.com"
+      - "C:/Program Files/FMCSimulator/bin/rc.exe"
+      - "C:/Program Files/FMCSimulator/bin/rc"
+      - "C:/Program Files/FMCSimulator/sbin/rc.com"
+      - "C:/Program Files/FMCSimulator/sbin/rc.exe"
+      - "C:/Program Files/FMCSimulator/sbin/rc"
+      - "C:/Program Files/FMCSimulator/rc.com"
+      - "C:/Program Files/FMCSimulator/rc.exe"
+      - "C:/Program Files/FMCSimulator/rc"
+    found: false
     search_context:
       ENV{PATH}:
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\DiagnosticsHub\\Collector"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
-        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\tools\\\\trae-gopls\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\workspaces\\\\e4694819\\\\versions\\\\node\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\versions\\\\node\\\\current"
@@ -1069,10 +998,6 @@ events:
         - "C:\\Users\\ZhuanZ\\AppData\\Roaming\\npm"
         - "C:\\Users\\ZhuanZ\\.local\\bin\\"
         - "c:\\Users\\ZhuanZ\\AppData\\Local\\Programs\\Trae CN\\resources\\app\\node_modules\\@vscode\\ripgrep\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\vcpkg"
       CMAKE_INSTALL_PREFIX: "C:/Program Files/FMCSimulator"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -1088,8 +1013,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-eye2wy"
-      binary: "D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-eye2wy"
+      source: "D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-kacpcw"
+      binary: "D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-kacpcw"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1100,39 +1025,39 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-eye2wy'
+        Change Dir: 'D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-kacpcw'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a11b0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b6590.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.14.40+3e7442088
-        鐢熸垚鍚姩鏃堕棿涓?2026/6/11 11:31:22銆?
+        鐢熸垚鍚姩鏃堕棿涓?2026/6/11 13:43:18銆?
         
-        鑺傜偣 1 涓婄殑椤圭洰鈥淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eye2wy\\cmTC_a11b0.vcxproj鈥?榛樿鐩爣)銆?
+        鑺傜偣 1 涓婄殑椤圭洰鈥淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kacpcw\\cmTC_b6590.vcxproj鈥?榛樿鐩爣)銆?
         PrepareForBuild:
           宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
-          姝ｅ湪鍒涘缓鐩綍鈥淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eye2wy\\Debug\\鈥濄€?
-          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_a11b0.dir\\Debug\\cmTC_a11b0.tlog\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kacpcw\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_b6590.dir\\Debug\\cmTC_b6590.tlog\\鈥濄€?
         InitializeBuildStatus:
-          姝ｅ湪鍒涘缓鈥渃mTC_a11b0.dir\\Debug\\cmTC_a11b0.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
-          姝ｅ湪瀵光€渃mTC_a11b0.dir\\Debug\\cmTC_a11b0.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+          姝ｅ湪鍒涘缓鈥渃mTC_b6590.dir\\Debug\\cmTC_b6590.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_b6590.dir\\Debug\\cmTC_b6590.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_a11b0.dir\\Debug\\\\" /Fd"cmTC_a11b0.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_b6590.dir\\Debug\\\\" /Fd"cmTC_b6590.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
           鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.44.35227 鐗?
           鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_a11b0.dir\\Debug\\\\" /Fd"cmTC_a11b0.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_b6590.dir\\Debug\\\\" /Fd"cmTC_b6590.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eye2wy\\Debug\\cmTC_a11b0.exe" /INCREMENTAL /ILK:"cmTC_a11b0.dir\\Debug\\cmTC_a11b0.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-eye2wy/Debug/cmTC_a11b0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-eye2wy/Debug/cmTC_a11b0.lib" /MACHINE:X64  /machine:x64 cmTC_a11b0.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_a11b0.vcxproj -> D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eye2wy\\Debug\\cmTC_a11b0.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kacpcw\\Debug\\cmTC_b6590.exe" /INCREMENTAL /ILK:"cmTC_b6590.dir\\Debug\\cmTC_b6590.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-kacpcw/Debug/cmTC_b6590.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-kacpcw/Debug/cmTC_b6590.lib" /MACHINE:X64  /machine:x64 cmTC_b6590.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_b6590.vcxproj -> D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kacpcw\\Debug\\cmTC_b6590.exe
         FinalizeBuildStatus:
-          姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_a11b0.dir\\Debug\\cmTC_a11b0.tlog\\unsuccessfulbuild鈥濄€?
-          姝ｅ湪瀵光€渃mTC_a11b0.dir\\Debug\\cmTC_a11b0.tlog\\cmTC_a11b0.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
-        宸插畬鎴愮敓鎴愰」鐩€淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eye2wy\\cmTC_a11b0.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+          姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_b6590.dir\\Debug\\cmTC_b6590.tlog\\unsuccessfulbuild鈥濄€?
+          姝ｅ湪瀵光€渃mTC_b6590.dir\\Debug\\cmTC_b6590.tlog\\cmTC_b6590.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+        宸插畬鎴愮敓鎴愰」鐩€淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kacpcw\\cmTC_b6590.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
         
         宸叉垚鍔熺敓鎴愩€?
             0 涓鍛?
             0 涓敊璇?
         
-        宸茬敤鏃堕棿 00:00:00.51
+        宸茬敤鏃堕棿 00:00:00.95
         
       exitCode: 0
   -
@@ -1179,8 +1104,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-r8bw86"
-      binary: "D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-r8bw86"
+      source: "D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-izr7ek"
+      binary: "D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-izr7ek"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1191,39 +1116,39 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-r8bw86'
+        Change Dir: 'D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-izr7ek'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_2412f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d184f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.14.40+3e7442088
-        鐢熸垚鍚姩鏃堕棿涓?2026/6/11 11:31:23銆?
+        鐢熸垚鍚姩鏃堕棿涓?2026/6/11 13:43:20銆?
         
-        鑺傜偣 1 涓婄殑椤圭洰鈥淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-r8bw86\\cmTC_2412f.vcxproj鈥?榛樿鐩爣)銆?
+        鑺傜偣 1 涓婄殑椤圭洰鈥淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-izr7ek\\cmTC_d184f.vcxproj鈥?榛樿鐩爣)銆?
         PrepareForBuild:
           宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
-          姝ｅ湪鍒涘缓鐩綍鈥淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-r8bw86\\Debug\\鈥濄€?
-          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_2412f.dir\\Debug\\cmTC_2412f.tlog\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-izr7ek\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_d184f.dir\\Debug\\cmTC_d184f.tlog\\鈥濄€?
         InitializeBuildStatus:
-          姝ｅ湪鍒涘缓鈥渃mTC_2412f.dir\\Debug\\cmTC_2412f.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
-          姝ｅ湪瀵光€渃mTC_2412f.dir\\Debug\\cmTC_2412f.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+          姝ｅ湪鍒涘缓鈥渃mTC_d184f.dir\\Debug\\cmTC_d184f.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_d184f.dir\\Debug\\cmTC_d184f.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++17 /Fo"cmTC_2412f.dir\\Debug\\\\" /Fd"cmTC_2412f.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-r8bw86\\src.cxx"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++17 /Fo"cmTC_d184f.dir\\Debug\\\\" /Fd"cmTC_d184f.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-izr7ek\\src.cxx"
           鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.44.35227 鐗?
           鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++17 /Fo"cmTC_2412f.dir\\Debug\\\\" /Fd"cmTC_2412f.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-r8bw86\\src.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++17 /Fo"cmTC_d184f.dir\\Debug\\\\" /Fd"cmTC_d184f.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-izr7ek\\src.cxx"
           src.cxx
-        D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-r8bw86\\src.cxx(1,10): error C1083: 鏃犳硶鎵撳紑鍖呮嫭鏂囦欢: 鈥減thread.h鈥? No such file or directory [D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-r8bw86\\cmTC_2412f.vcxproj]
-        宸插畬鎴愮敓鎴愰」鐩€淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-r8bw86\\cmTC_2412f.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
+        D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-izr7ek\\src.cxx(1,10): error C1083: 鏃犳硶鎵撳紑鍖呮嫭鏂囦欢: 鈥減thread.h鈥? No such file or directory [D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-izr7ek\\cmTC_d184f.vcxproj]
+        宸插畬鎴愮敓鎴愰」鐩€淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-izr7ek\\cmTC_d184f.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
         
         鐢熸垚澶辫触銆?
         
-        鈥淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-r8bw86\\cmTC_2412f.vcxproj鈥?榛樿鐩爣) (1) ->
+        鈥淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-izr7ek\\cmTC_d184f.vcxproj鈥?榛樿鐩爣) (1) ->
         (ClCompile 鐩爣) -> 
-          D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-r8bw86\\src.cxx(1,10): error C1083: 鏃犳硶鎵撳紑鍖呮嫭鏂囦欢: 鈥減thread.h鈥? No such file or directory [D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-r8bw86\\cmTC_2412f.vcxproj]
+          D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-izr7ek\\src.cxx(1,10): error C1083: 鏃犳硶鎵撳紑鍖呮嫭鏂囦欢: 鈥減thread.h鈥? No such file or directory [D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-izr7ek\\cmTC_d184f.vcxproj]
         
             0 涓鍛?
             1 涓敊璇?
         
-        宸茬敤鏃堕棿 00:00:00.37
+        宸茬敤鏃堕棿 00:00:00.38
         
       exitCode: 1
   -
@@ -1241,8 +1166,8 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-nxcrit"
-      binary: "D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-nxcrit"
+      source: "D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-lxtxmh"
+      binary: "D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-lxtxmh"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1253,36 +1178,36 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-nxcrit'
+        Change Dir: 'D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-lxtxmh'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_41094.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_2652e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.14.40+3e7442088
-        鐢熸垚鍚姩鏃堕棿涓?2026/6/11 11:31:24銆?
+        鐢熸垚鍚姩鏃堕棿涓?2026/6/11 13:43:20銆?
         
-        鑺傜偣 1 涓婄殑椤圭洰鈥淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nxcrit\\cmTC_41094.vcxproj鈥?榛樿鐩爣)銆?
+        鑺傜偣 1 涓婄殑椤圭洰鈥淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lxtxmh\\cmTC_2652e.vcxproj鈥?榛樿鐩爣)銆?
         PrepareForBuild:
           宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
-          姝ｅ湪鍒涘缓鐩綍鈥淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nxcrit\\Debug\\鈥濄€?
-          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_41094.dir\\Debug\\cmTC_41094.tlog\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lxtxmh\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_2652e.dir\\Debug\\cmTC_2652e.tlog\\鈥濄€?
         InitializeBuildStatus:
-          姝ｅ湪鍒涘缓鈥渃mTC_41094.dir\\Debug\\cmTC_41094.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
-          姝ｅ湪瀵光€渃mTC_41094.dir\\Debug\\cmTC_41094.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+          姝ｅ湪鍒涘缓鈥渃mTC_2652e.dir\\Debug\\cmTC_2652e.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_2652e.dir\\Debug\\cmTC_2652e.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++17 /Fo"cmTC_41094.dir\\Debug\\\\" /Fd"cmTC_41094.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nxcrit\\CheckFunctionExists.cxx"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++17 /Fo"cmTC_2652e.dir\\Debug\\\\" /Fd"cmTC_2652e.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lxtxmh\\CheckFunctionExists.cxx"
           鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.44.35227 鐗?
           鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++17 /Fo"cmTC_41094.dir\\Debug\\\\" /Fd"cmTC_41094.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nxcrit\\CheckFunctionExists.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++17 /Fo"cmTC_2652e.dir\\Debug\\\\" /Fd"cmTC_2652e.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lxtxmh\\CheckFunctionExists.cxx"
           CheckFunctionExists.cxx
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nxcrit\\Debug\\cmTC_41094.exe" /INCREMENTAL /ILK:"cmTC_41094.dir\\Debug\\cmTC_41094.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-nxcrit/Debug/cmTC_41094.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-nxcrit/Debug/cmTC_41094.lib" /MACHINE:X64  /machine:x64 cmTC_41094.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: 鏃犳硶鎵撳紑鏂囦欢鈥減threads.lib鈥?[D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nxcrit\\cmTC_41094.vcxproj]
-        宸插畬鎴愮敓鎴愰」鐩€淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nxcrit\\cmTC_41094.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lxtxmh\\Debug\\cmTC_2652e.exe" /INCREMENTAL /ILK:"cmTC_2652e.dir\\Debug\\cmTC_2652e.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-lxtxmh/Debug/cmTC_2652e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-lxtxmh/Debug/cmTC_2652e.lib" /MACHINE:X64  /machine:x64 cmTC_2652e.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: 鏃犳硶鎵撳紑鏂囦欢鈥減threads.lib鈥?[D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lxtxmh\\cmTC_2652e.vcxproj]
+        宸插畬鎴愮敓鎴愰」鐩€淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lxtxmh\\cmTC_2652e.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
         
         鐢熸垚澶辫触銆?
         
-        鈥淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nxcrit\\cmTC_41094.vcxproj鈥?榛樿鐩爣) (1) ->
+        鈥淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lxtxmh\\cmTC_2652e.vcxproj鈥?榛樿鐩爣) (1) ->
         (Link 鐩爣) -> 
-          LINK : fatal error LNK1104: 鏃犳硶鎵撳紑鏂囦欢鈥減threads.lib鈥?[D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nxcrit\\cmTC_41094.vcxproj]
+          LINK : fatal error LNK1104: 鏃犳硶鎵撳紑鏂囦欢鈥減threads.lib鈥?[D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lxtxmh\\cmTC_2652e.vcxproj]
         
             0 涓鍛?
             1 涓敊璇?
@@ -1305,8 +1230,8 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-mwn9ge"
-      binary: "D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-mwn9ge"
+      source: "D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-wdhgfq"
+      binary: "D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-wdhgfq"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1317,36 +1242,36 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-mwn9ge'
+        Change Dir: 'D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-wdhgfq'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_00d25.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_fd2cf.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.14.40+3e7442088
-        鐢熸垚鍚姩鏃堕棿涓?2026/6/11 11:31:25銆?
+        鐢熸垚鍚姩鏃堕棿涓?2026/6/11 13:43:21銆?
         
-        鑺傜偣 1 涓婄殑椤圭洰鈥淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mwn9ge\\cmTC_00d25.vcxproj鈥?榛樿鐩爣)銆?
+        鑺傜偣 1 涓婄殑椤圭洰鈥淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wdhgfq\\cmTC_fd2cf.vcxproj鈥?榛樿鐩爣)銆?
         PrepareForBuild:
           宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
-          姝ｅ湪鍒涘缓鐩綍鈥淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mwn9ge\\Debug\\鈥濄€?
-          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_00d25.dir\\Debug\\cmTC_00d25.tlog\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wdhgfq\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_fd2cf.dir\\Debug\\cmTC_fd2cf.tlog\\鈥濄€?
         InitializeBuildStatus:
-          姝ｅ湪鍒涘缓鈥渃mTC_00d25.dir\\Debug\\cmTC_00d25.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
-          姝ｅ湪瀵光€渃mTC_00d25.dir\\Debug\\cmTC_00d25.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+          姝ｅ湪鍒涘缓鈥渃mTC_fd2cf.dir\\Debug\\cmTC_fd2cf.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_fd2cf.dir\\Debug\\cmTC_fd2cf.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++17 /Fo"cmTC_00d25.dir\\Debug\\\\" /Fd"cmTC_00d25.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mwn9ge\\CheckFunctionExists.cxx"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++17 /Fo"cmTC_fd2cf.dir\\Debug\\\\" /Fd"cmTC_fd2cf.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wdhgfq\\CheckFunctionExists.cxx"
           鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.44.35227 鐗?
           鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++17 /Fo"cmTC_00d25.dir\\Debug\\\\" /Fd"cmTC_00d25.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mwn9ge\\CheckFunctionExists.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++17 /Fo"cmTC_fd2cf.dir\\Debug\\\\" /Fd"cmTC_fd2cf.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wdhgfq\\CheckFunctionExists.cxx"
           CheckFunctionExists.cxx
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mwn9ge\\Debug\\cmTC_00d25.exe" /INCREMENTAL /ILK:"cmTC_00d25.dir\\Debug\\cmTC_00d25.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-mwn9ge/Debug/cmTC_00d25.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-mwn9ge/Debug/cmTC_00d25.lib" /MACHINE:X64  /machine:x64 cmTC_00d25.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: 鏃犳硶鎵撳紑鏂囦欢鈥減thread.lib鈥?[D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mwn9ge\\cmTC_00d25.vcxproj]
-        宸插畬鎴愮敓鎴愰」鐩€淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mwn9ge\\cmTC_00d25.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wdhgfq\\Debug\\cmTC_fd2cf.exe" /INCREMENTAL /ILK:"cmTC_fd2cf.dir\\Debug\\cmTC_fd2cf.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-wdhgfq/Debug/cmTC_fd2cf.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-wdhgfq/Debug/cmTC_fd2cf.lib" /MACHINE:X64  /machine:x64 cmTC_fd2cf.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: 鏃犳硶鎵撳紑鏂囦欢鈥減thread.lib鈥?[D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wdhgfq\\cmTC_fd2cf.vcxproj]
+        宸插畬鎴愮敓鎴愰」鐩€淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wdhgfq\\cmTC_fd2cf.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
         
         鐢熸垚澶辫触銆?
         
-        鈥淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mwn9ge\\cmTC_00d25.vcxproj鈥?榛樿鐩爣) (1) ->
+        鈥淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wdhgfq\\cmTC_fd2cf.vcxproj鈥?榛樿鐩爣) (1) ->
         (Link 鐩爣) -> 
-          LINK : fatal error LNK1104: 鏃犳硶鎵撳紑鏂囦欢鈥減thread.lib鈥?[D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mwn9ge\\cmTC_00d25.vcxproj]
+          LINK : fatal error LNK1104: 鏃犳硶鎵撳紑鏂囦欢鈥減thread.lib鈥?[D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wdhgfq\\cmTC_fd2cf.vcxproj]
         
             0 涓鍛?
             1 涓敊璇?
@@ -1370,8 +1295,8 @@ events:
     checks:
       - "Performing Test HAVE_STDATOMIC"
     directories:
-      source: "D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-2ba4mv"
-      binary: "D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-2ba4mv"
+      source: "D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-kqnjzg"
+      binary: "D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-kqnjzg"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1382,39 +1307,39 @@ events:
       variable: "HAVE_STDATOMIC"
       cached: true
       stdout: |
-        Change Dir: 'D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-2ba4mv'
+        Change Dir: 'D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-kqnjzg'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_eb159.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_42f53.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.14.40+3e7442088
-        鐢熸垚鍚姩鏃堕棿涓?2026/6/11 11:31:25銆?
+        鐢熸垚鍚姩鏃堕棿涓?2026/6/11 13:43:21銆?
         
-        鑺傜偣 1 涓婄殑椤圭洰鈥淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ba4mv\\cmTC_eb159.vcxproj鈥?榛樿鐩爣)銆?
+        鑺傜偣 1 涓婄殑椤圭洰鈥淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kqnjzg\\cmTC_42f53.vcxproj鈥?榛樿鐩爣)銆?
         PrepareForBuild:
           宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
-          姝ｅ湪鍒涘缓鐩綍鈥淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ba4mv\\Debug\\鈥濄€?
-          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_eb159.dir\\Debug\\cmTC_eb159.tlog\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kqnjzg\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_42f53.dir\\Debug\\cmTC_42f53.tlog\\鈥濄€?
         InitializeBuildStatus:
-          姝ｅ湪鍒涘缓鈥渃mTC_eb159.dir\\Debug\\cmTC_eb159.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
-          姝ｅ湪瀵光€渃mTC_eb159.dir\\Debug\\cmTC_eb159.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+          姝ｅ湪鍒涘缓鈥渃mTC_42f53.dir\\Debug\\cmTC_42f53.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_42f53.dir\\Debug\\cmTC_42f53.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDATOMIC /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++17 /Fo"cmTC_eb159.dir\\Debug\\\\" /Fd"cmTC_eb159.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ba4mv\\src.cxx"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDATOMIC /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++17 /Fo"cmTC_42f53.dir\\Debug\\\\" /Fd"cmTC_42f53.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kqnjzg\\src.cxx"
           鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.44.35227 鐗?
           鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDATOMIC /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++17 /Fo"cmTC_eb159.dir\\Debug\\\\" /Fd"cmTC_eb159.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ba4mv\\src.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDATOMIC /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++17 /Fo"cmTC_42f53.dir\\Debug\\\\" /Fd"cmTC_42f53.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kqnjzg\\src.cxx"
           src.cxx
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ba4mv\\Debug\\cmTC_eb159.exe" /INCREMENTAL /ILK:"cmTC_eb159.dir\\Debug\\cmTC_eb159.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-2ba4mv/Debug/cmTC_eb159.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-2ba4mv/Debug/cmTC_eb159.lib" /MACHINE:X64  /machine:x64 cmTC_eb159.dir\\Debug\\src.obj
-          cmTC_eb159.vcxproj -> D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ba4mv\\Debug\\cmTC_eb159.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kqnjzg\\Debug\\cmTC_42f53.exe" /INCREMENTAL /ILK:"cmTC_42f53.dir\\Debug\\cmTC_42f53.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-kqnjzg/Debug/cmTC_42f53.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/SOLO-10/85-fms-vnav-calc/build/CMakeFiles/CMakeScratch/TryCompile-kqnjzg/Debug/cmTC_42f53.lib" /MACHINE:X64  /machine:x64 cmTC_42f53.dir\\Debug\\src.obj
+          cmTC_42f53.vcxproj -> D:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kqnjzg\\Debug\\cmTC_42f53.exe
         FinalizeBuildStatus:
-          姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_eb159.dir\\Debug\\cmTC_eb159.tlog\\unsuccessfulbuild鈥濄€?
-          姝ｅ湪瀵光€渃mTC_eb159.dir\\Debug\\cmTC_eb159.tlog\\cmTC_eb159.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
-        宸插畬鎴愮敓鎴愰」鐩€淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ba4mv\\cmTC_eb159.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+          姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_42f53.dir\\Debug\\cmTC_42f53.tlog\\unsuccessfulbuild鈥濄€?
+          姝ｅ湪瀵光€渃mTC_42f53.dir\\Debug\\cmTC_42f53.tlog\\cmTC_42f53.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+        宸插畬鎴愮敓鎴愰」鐩€淒:\\SOLO-10\\85-fms-vnav-calc\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kqnjzg\\cmTC_42f53.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
         
         宸叉垚鍔熺敓鎴愩€?
             0 涓鍛?
             0 涓敊璇?
         
-        宸茬敤鏃堕棿 00:00:00.55
+        宸茬敤鏃堕棿 00:00:00.59
         
       exitCode: 0
   -
@@ -1523,18 +1448,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "D:/Qt/6.8.3/msvc2022_64"
       ENV{PATH}:
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\DiagnosticsHub\\Collector"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
-        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\tools\\\\trae-gopls\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\workspaces\\\\e4694819\\\\versions\\\\node\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\versions\\\\node\\\\current"
@@ -1570,10 +1483,6 @@ events:
         - "C:\\Users\\ZhuanZ\\AppData\\Roaming\\npm"
         - "C:\\Users\\ZhuanZ\\.local\\bin\\"
         - "c:\\Users\\ZhuanZ\\AppData\\Local\\Programs\\Trae CN\\resources\\app\\node_modules\\@vscode\\ripgrep\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\vcpkg"
       CMAKE_INSTALL_PREFIX: "C:/Program Files/FMCSimulator"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -1725,18 +1634,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "D:/Qt/6.8.3/msvc2022_64"
       ENV{PATH}:
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\DiagnosticsHub\\Collector"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
-        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\tools\\\\trae-gopls\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\workspaces\\\\e4694819\\\\versions\\\\node\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\versions\\\\node\\\\current"
@@ -1772,10 +1669,6 @@ events:
         - "C:\\Users\\ZhuanZ\\AppData\\Roaming\\npm"
         - "C:\\Users\\ZhuanZ\\.local\\bin\\"
         - "c:\\Users\\ZhuanZ\\AppData\\Local\\Programs\\Trae CN\\resources\\app\\node_modules\\@vscode\\ripgrep\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\vcpkg"
       CMAKE_INSTALL_PREFIX: "C:/Program Files/FMCSimulator"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -1927,18 +1820,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "D:/Qt/6.8.3/msvc2022_64"
       ENV{PATH}:
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\DiagnosticsHub\\Collector"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
-        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\tools\\\\trae-gopls\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\workspaces\\\\e4694819\\\\versions\\\\node\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\versions\\\\node\\\\current"
@@ -1974,10 +1855,6 @@ events:
         - "C:\\Users\\ZhuanZ\\AppData\\Roaming\\npm"
         - "C:\\Users\\ZhuanZ\\.local\\bin\\"
         - "c:\\Users\\ZhuanZ\\AppData\\Local\\Programs\\Trae CN\\resources\\app\\node_modules\\@vscode\\ripgrep\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\vcpkg"
       CMAKE_INSTALL_PREFIX: "C:/Program Files/FMCSimulator"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -2010,18 +1887,6 @@ events:
       - "D:/Qt/6.8.3/msvc2022_64/sbin/"
       - "D:/Qt/6.8.3/msvc2022_64/"
       - "D:/Qt/6.8.3/msvc2022_64/bin/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/vcpackages/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/Roslyn/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Team Tools/DiagnosticsHub/Collector/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/"
-      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/"
       - "C:/Users/ZhuanZ/.trae-cn/tools/trae-gopls/current/"
       - "C:/Users/ZhuanZ/.trae-cn/sdks/workspaces/e4694819/versions/node/current/"
       - "C:/Users/ZhuanZ/.trae-cn/sdks/versions/node/current/"
@@ -2052,10 +1917,6 @@ events:
       - "C:/Users/ZhuanZ/AppData/Roaming/npm/"
       - "C:/Users/ZhuanZ/.local/bin/"
       - "C:/Users/ZhuanZ/AppData/Local/Programs/Trae CN/resources/app/node_modules/@vscode/ripgrep/bin/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/vcpkg/"
       - "C:/Program Files/bin/"
       - "C:/Program Files/sbin/"
       - "C:/Program Files/"
@@ -2075,18 +1936,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "D:/Qt/6.8.3/msvc2022_64"
       ENV{PATH}:
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\DiagnosticsHub\\Collector"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
-        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\tools\\\\trae-gopls\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\workspaces\\\\e4694819\\\\versions\\\\node\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\versions\\\\node\\\\current"
@@ -2122,10 +1971,6 @@ events:
         - "C:\\Users\\ZhuanZ\\AppData\\Roaming\\npm"
         - "C:\\Users\\ZhuanZ\\.local\\bin\\"
         - "c:\\Users\\ZhuanZ\\AppData\\Local\\Programs\\Trae CN\\resources\\app\\node_modules\\@vscode\\ripgrep\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\vcpkg"
       CMAKE_INSTALL_PREFIX: "C:/Program Files/FMCSimulator"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -2224,18 +2069,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "D:/Qt/6.8.3/msvc2022_64"
       ENV{PATH}:
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\DiagnosticsHub\\Collector"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
-        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\tools\\\\trae-gopls\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\workspaces\\\\e4694819\\\\versions\\\\node\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\versions\\\\node\\\\current"
@@ -2271,10 +2104,6 @@ events:
         - "C:\\Users\\ZhuanZ\\AppData\\Roaming\\npm"
         - "C:\\Users\\ZhuanZ\\.local\\bin\\"
         - "c:\\Users\\ZhuanZ\\AppData\\Local\\Programs\\Trae CN\\resources\\app\\node_modules\\@vscode\\ripgrep\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\vcpkg"
       CMAKE_INSTALL_PREFIX: "C:/Program Files/FMCSimulator"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -2307,25 +2136,6 @@ events:
     candidate_directories:
       - "D:/Qt/6.8.3/msvc2022_64/include/"
       - "D:/Qt/6.8.3/msvc2022_64/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/include/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Auxiliary/VS/include/"
-      - "C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/ucrt/"
-      - "C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/um/"
-      - "C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/shared/"
-      - "C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/winrt/"
-      - "C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/cppwinrt/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/vcpackages/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/Roslyn/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Team Tools/DiagnosticsHub/Collector/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/"
-      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/"
       - "C:/Users/ZhuanZ/.trae-cn/tools/trae-gopls/current/"
       - "C:/Users/ZhuanZ/.trae-cn/sdks/workspaces/e4694819/versions/node/current/"
       - "C:/Users/ZhuanZ/.trae-cn/sdks/versions/node/current/"
@@ -2356,10 +2166,6 @@ events:
       - "C:/Users/ZhuanZ/AppData/Roaming/npm/"
       - "C:/Users/ZhuanZ/.local/bin/"
       - "C:/Users/ZhuanZ/AppData/Local/Programs/Trae CN/resources/app/node_modules/@vscode/ripgrep/bin/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/vcpkg/"
       - "C:/Program Files/include/"
       - "C:/Program Files/"
       - "C:/Program Files (x86)/include/"
@@ -2371,25 +2177,6 @@ events:
     searched_directories:
       - "D:/Qt/6.8.3/msvc2022_64/include/vulkan/vulkan.h"
       - "D:/Qt/6.8.3/msvc2022_64/vulkan/vulkan.h"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/include/vulkan/vulkan.h"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Auxiliary/VS/include/vulkan/vulkan.h"
-      - "C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/ucrt/vulkan/vulkan.h"
-      - "C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/um/vulkan/vulkan.h"
-      - "C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/shared/vulkan/vulkan.h"
-      - "C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/winrt/vulkan/vulkan.h"
-      - "C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/cppwinrt/vulkan/vulkan.h"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/vulkan/vulkan.h"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/vcpackages/vulkan/vulkan.h"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/TestWindow/vulkan/vulkan.h"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/Roslyn/vulkan/vulkan.h"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Team Tools/DiagnosticsHub/Collector/vulkan/vulkan.h"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/vulkan/vulkan.h"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/vulkan/vulkan.h"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/vulkan/vulkan.h"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/vulkan/vulkan.h"
-      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/vulkan/vulkan.h"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/vulkan/vulkan.h"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/vulkan/vulkan.h"
       - "C:/Users/ZhuanZ/.trae-cn/tools/trae-gopls/current/vulkan/vulkan.h"
       - "C:/Users/ZhuanZ/.trae-cn/sdks/workspaces/e4694819/versions/node/current/vulkan/vulkan.h"
       - "C:/Users/ZhuanZ/.trae-cn/sdks/versions/node/current/vulkan/vulkan.h"
@@ -2420,10 +2207,6 @@ events:
       - "C:/Users/ZhuanZ/AppData/Roaming/npm/vulkan/vulkan.h"
       - "C:/Users/ZhuanZ/.local/bin/vulkan/vulkan.h"
       - "C:/Users/ZhuanZ/AppData/Local/Programs/Trae CN/resources/app/node_modules/@vscode/ripgrep/bin/vulkan/vulkan.h"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/vulkan/vulkan.h"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/vulkan/vulkan.h"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/vulkan/vulkan.h"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/vcpkg/vulkan/vulkan.h"
       - "C:/Program Files/include/vulkan/vulkan.h"
       - "C:/Program Files/vulkan/vulkan.h"
       - "C:/Program Files (x86)/include/vulkan/vulkan.h"
@@ -2437,18 +2220,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "D:/Qt/6.8.3/msvc2022_64"
       ENV{PATH}:
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\DiagnosticsHub\\Collector"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
-        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\tools\\\\trae-gopls\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\workspaces\\\\e4694819\\\\versions\\\\node\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\versions\\\\node\\\\current"
@@ -2484,24 +2255,12 @@ events:
         - "C:\\Users\\ZhuanZ\\AppData\\Roaming\\npm"
         - "C:\\Users\\ZhuanZ\\.local\\bin\\"
         - "c:\\Users\\ZhuanZ\\AppData\\Local\\Programs\\Trae CN\\resources\\app\\node_modules\\@vscode\\ripgrep\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\vcpkg"
       CMAKE_INSTALL_PREFIX: "C:/Program Files/FMCSimulator"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
         - "C:/Program Files/FMCSimulator"
-      ENV{INCLUDE}:
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\include"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Auxiliary\\VS\\include"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\ucrt"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.26100.0\\\\um"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.26100.0\\\\shared"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.26100.0\\\\winrt"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.26100.0\\\\cppwinrt"
   -
     kind: "find-v1"
     backtrace:
@@ -2528,21 +2287,6 @@ events:
     candidate_directories:
       - "D:/Qt/6.8.3/msvc2022_64/lib/"
       - "D:/Qt/6.8.3/msvc2022_64/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/lib/x64/"
-      - "C:/Program Files (x86)/Windows Kits/10/Lib/10.0.26100.0/ucrt/x64/"
-      - "C:/Program Files (x86)/Windows Kits/10/Lib/10.0.26100.0/um/x64/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/vcpackages/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/Roslyn/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Team Tools/DiagnosticsHub/Collector/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/"
-      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/"
       - "C:/Users/ZhuanZ/.trae-cn/tools/trae-gopls/current/"
       - "C:/Users/ZhuanZ/.trae-cn/sdks/workspaces/e4694819/versions/node/current/"
       - "C:/Users/ZhuanZ/.trae-cn/sdks/versions/node/current/"
@@ -2573,10 +2317,6 @@ events:
       - "C:/Users/ZhuanZ/AppData/Roaming/npm/"
       - "C:/Users/ZhuanZ/.local/bin/"
       - "C:/Users/ZhuanZ/AppData/Local/Programs/Trae CN/resources/app/node_modules/@vscode/ripgrep/bin/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/vcpkg/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/"
       - "C:/Program Files (x86)/lib/"
@@ -2590,21 +2330,6 @@ events:
     searched_directories:
       - "D:/Qt/6.8.3/msvc2022_64/lib/"
       - "D:/Qt/6.8.3/msvc2022_64/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/lib/x64/"
-      - "C:/Program Files (x86)/Windows Kits/10/Lib/10.0.26100.0/ucrt/x64/"
-      - "C:/Program Files (x86)/Windows Kits/10/Lib/10.0.26100.0/um/x64/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/vcpackages/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/Roslyn/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Team Tools/DiagnosticsHub/Collector/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/"
-      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/"
       - "C:/Users/ZhuanZ/.trae-cn/tools/trae-gopls/current/"
       - "C:/Users/ZhuanZ/.trae-cn/sdks/workspaces/e4694819/versions/node/current/"
       - "C:/Users/ZhuanZ/.trae-cn/sdks/versions/node/current/"
@@ -2635,10 +2360,6 @@ events:
       - "C:/Users/ZhuanZ/AppData/Roaming/npm/"
       - "C:/Users/ZhuanZ/.local/bin/"
       - "C:/Users/ZhuanZ/AppData/Local/Programs/Trae CN/resources/app/node_modules/@vscode/ripgrep/bin/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/vcpkg/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/"
       - "C:/Program Files (x86)/lib/"
@@ -2654,18 +2375,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "D:/Qt/6.8.3/msvc2022_64"
       ENV{PATH}:
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\DiagnosticsHub\\Collector"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
-        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\tools\\\\trae-gopls\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\workspaces\\\\e4694819\\\\versions\\\\node\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\versions\\\\node\\\\current"
@@ -2701,10 +2410,6 @@ events:
         - "C:\\Users\\ZhuanZ\\AppData\\Roaming\\npm"
         - "C:\\Users\\ZhuanZ\\.local\\bin\\"
         - "c:\\Users\\ZhuanZ\\AppData\\Local\\Programs\\Trae CN\\resources\\app\\node_modules\\@vscode\\ripgrep\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\vcpkg"
       CMAKE_INSTALL_PREFIX: "C:/Program Files/FMCSimulator"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -2715,10 +2420,6 @@ events:
         - "C:/Program Files/FMCSimulator/bin"
         - "C:/Program Files/CMake/bin"
         - "/bin"
-      ENV{LIB}:
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\lib\\x64"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\lib\\10.0.26100.0\\ucrt\\x64"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\lib\\10.0.26100.0\\\\um\\x64"
   -
     kind: "find-v1"
     backtrace:
@@ -2746,18 +2447,6 @@ events:
       - "D:/Qt/6.8.3/msvc2022_64/bin/"
       - "D:/Qt/6.8.3/msvc2022_64/sbin/"
       - "D:/Qt/6.8.3/msvc2022_64/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/vcpackages/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/Roslyn/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Team Tools/DiagnosticsHub/Collector/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/"
-      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/"
       - "C:/Users/ZhuanZ/.trae-cn/tools/trae-gopls/current/"
       - "C:/Users/ZhuanZ/.trae-cn/sdks/workspaces/e4694819/versions/node/current/"
       - "C:/Users/ZhuanZ/.trae-cn/sdks/versions/node/current/"
@@ -2788,10 +2477,6 @@ events:
       - "C:/Users/ZhuanZ/AppData/Roaming/npm/"
       - "C:/Users/ZhuanZ/.local/bin/"
       - "C:/Users/ZhuanZ/AppData/Local/Programs/Trae CN/resources/app/node_modules/@vscode/ripgrep/bin/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/vcpkg/"
       - "C:/Program Files/bin/"
       - "C:/Program Files/sbin/"
       - "C:/Program Files/"
@@ -2814,42 +2499,6 @@ events:
       - "D:/Qt/6.8.3/msvc2022_64/glslc.com"
       - "D:/Qt/6.8.3/msvc2022_64/glslc.exe"
       - "D:/Qt/6.8.3/msvc2022_64/glslc"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/glslc.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/glslc.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/glslc"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/vcpackages/glslc.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/vcpackages/glslc.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/vcpackages/glslc"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/TestWindow/glslc.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/TestWindow/glslc.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/TestWindow/glslc"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/Roslyn/glslc.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/Roslyn/glslc.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/Roslyn/glslc"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Team Tools/DiagnosticsHub/Collector/glslc.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Team Tools/DiagnosticsHub/Collector/glslc.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Team Tools/DiagnosticsHub/Collector/glslc"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/glslc.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/glslc.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/glslc"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/glslc.com"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/glslc.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/glslc"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/glslc.com"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/glslc.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/glslc"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/glslc.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/glslc.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/glslc"
-      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/glslc.com"
-      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/glslc.exe"
-      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/glslc"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/glslc.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/glslc.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/glslc"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/glslc.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/glslc.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/glslc"
       - "C:/Users/ZhuanZ/.trae-cn/tools/trae-gopls/current/glslc.com"
       - "C:/Users/ZhuanZ/.trae-cn/tools/trae-gopls/current/glslc.exe"
       - "C:/Users/ZhuanZ/.trae-cn/tools/trae-gopls/current/glslc"
@@ -2940,18 +2589,6 @@ events:
       - "C:/Users/ZhuanZ/AppData/Local/Programs/Trae CN/resources/app/node_modules/@vscode/ripgrep/bin/glslc.com"
       - "C:/Users/ZhuanZ/AppData/Local/Programs/Trae CN/resources/app/node_modules/@vscode/ripgrep/bin/glslc.exe"
       - "C:/Users/ZhuanZ/AppData/Local/Programs/Trae CN/resources/app/node_modules/@vscode/ripgrep/bin/glslc"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/glslc.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/glslc.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/glslc"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/glslc.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/glslc.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/glslc"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/glslc.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/glslc.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/glslc"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/vcpkg/glslc.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/vcpkg/glslc.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/vcpkg/glslc"
       - "C:/Program Files/bin/glslc.com"
       - "C:/Program Files/bin/glslc.exe"
       - "C:/Program Files/bin/glslc"
@@ -2993,18 +2630,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "D:/Qt/6.8.3/msvc2022_64"
       ENV{PATH}:
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\DiagnosticsHub\\Collector"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
-        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\tools\\\\trae-gopls\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\workspaces\\\\e4694819\\\\versions\\\\node\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\versions\\\\node\\\\current"
@@ -3040,10 +2665,6 @@ events:
         - "C:\\Users\\ZhuanZ\\AppData\\Roaming\\npm"
         - "C:\\Users\\ZhuanZ\\.local\\bin\\"
         - "c:\\Users\\ZhuanZ\\AppData\\Local\\Programs\\Trae CN\\resources\\app\\node_modules\\@vscode\\ripgrep\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\vcpkg"
       CMAKE_INSTALL_PREFIX: "C:/Program Files/FMCSimulator"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -3077,18 +2698,6 @@ events:
       - "D:/Qt/6.8.3/msvc2022_64/bin/"
       - "D:/Qt/6.8.3/msvc2022_64/sbin/"
       - "D:/Qt/6.8.3/msvc2022_64/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/vcpackages/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/Roslyn/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Team Tools/DiagnosticsHub/Collector/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/"
-      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/"
       - "C:/Users/ZhuanZ/.trae-cn/tools/trae-gopls/current/"
       - "C:/Users/ZhuanZ/.trae-cn/sdks/workspaces/e4694819/versions/node/current/"
       - "C:/Users/ZhuanZ/.trae-cn/sdks/versions/node/current/"
@@ -3119,10 +2728,6 @@ events:
       - "C:/Users/ZhuanZ/AppData/Roaming/npm/"
       - "C:/Users/ZhuanZ/.local/bin/"
       - "C:/Users/ZhuanZ/AppData/Local/Programs/Trae CN/resources/app/node_modules/@vscode/ripgrep/bin/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/vcpkg/"
       - "C:/Program Files/bin/"
       - "C:/Program Files/sbin/"
       - "C:/Program Files/"
@@ -3145,42 +2750,6 @@ events:
       - "D:/Qt/6.8.3/msvc2022_64/glslangValidator.com"
       - "D:/Qt/6.8.3/msvc2022_64/glslangValidator.exe"
       - "D:/Qt/6.8.3/msvc2022_64/glslangValidator"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/glslangValidator.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/glslangValidator.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/glslangValidator"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/vcpackages/glslangValidator.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/vcpackages/glslangValidator.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/vcpackages/glslangValidator"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/TestWindow/glslangValidator.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/TestWindow/glslangValidator.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/TestWindow/glslangValidator"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/Roslyn/glslangValidator.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/Roslyn/glslangValidator.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/Roslyn/glslangValidator"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Team Tools/DiagnosticsHub/Collector/glslangValidator.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Team Tools/DiagnosticsHub/Collector/glslangValidator.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Team Tools/DiagnosticsHub/Collector/glslangValidator"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/glslangValidator.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/glslangValidator.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/glslangValidator"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/glslangValidator.com"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/glslangValidator.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/glslangValidator"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/glslangValidator.com"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/glslangValidator.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/glslangValidator"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/glslangValidator.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/glslangValidator.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/glslangValidator"
-      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/glslangValidator.com"
-      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/glslangValidator.exe"
-      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/glslangValidator"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/glslangValidator.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/glslangValidator.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/glslangValidator"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/glslangValidator.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/glslangValidator.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/glslangValidator"
       - "C:/Users/ZhuanZ/.trae-cn/tools/trae-gopls/current/glslangValidator.com"
       - "C:/Users/ZhuanZ/.trae-cn/tools/trae-gopls/current/glslangValidator.exe"
       - "C:/Users/ZhuanZ/.trae-cn/tools/trae-gopls/current/glslangValidator"
@@ -3271,18 +2840,6 @@ events:
       - "C:/Users/ZhuanZ/AppData/Local/Programs/Trae CN/resources/app/node_modules/@vscode/ripgrep/bin/glslangValidator.com"
       - "C:/Users/ZhuanZ/AppData/Local/Programs/Trae CN/resources/app/node_modules/@vscode/ripgrep/bin/glslangValidator.exe"
       - "C:/Users/ZhuanZ/AppData/Local/Programs/Trae CN/resources/app/node_modules/@vscode/ripgrep/bin/glslangValidator"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/glslangValidator.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/glslangValidator.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/glslangValidator"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/glslangValidator.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/glslangValidator.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/glslangValidator"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/glslangValidator.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/glslangValidator.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/glslangValidator"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/vcpkg/glslangValidator.com"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/vcpkg/glslangValidator.exe"
-      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/vcpkg/glslangValidator"
       - "C:/Program Files/bin/glslangValidator.com"
       - "C:/Program Files/bin/glslangValidator.exe"
       - "C:/Program Files/bin/glslangValidator"
@@ -3324,18 +2881,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "D:/Qt/6.8.3/msvc2022_64"
       ENV{PATH}:
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\DiagnosticsHub\\Collector"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
-        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\tools\\\\trae-gopls\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\workspaces\\\\e4694819\\\\versions\\\\node\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\versions\\\\node\\\\current"
@@ -3371,10 +2916,6 @@ events:
         - "C:\\Users\\ZhuanZ\\AppData\\Roaming\\npm"
         - "C:\\Users\\ZhuanZ\\.local\\bin\\"
         - "c:\\Users\\ZhuanZ\\AppData\\Local\\Programs\\Trae CN\\resources\\app\\node_modules\\@vscode\\ripgrep\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\vcpkg"
       CMAKE_INSTALL_PREFIX: "C:/Program Files/FMCSimulator"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -3487,18 +3028,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "D:/Qt/6.8.3/msvc2022_64"
       ENV{PATH}:
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\DiagnosticsHub\\Collector"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
-        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\tools\\\\trae-gopls\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\workspaces\\\\e4694819\\\\versions\\\\node\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\versions\\\\node\\\\current"
@@ -3534,10 +3063,6 @@ events:
         - "C:\\Users\\ZhuanZ\\AppData\\Roaming\\npm"
         - "C:\\Users\\ZhuanZ\\.local\\bin\\"
         - "c:\\Users\\ZhuanZ\\AppData\\Local\\Programs\\Trae CN\\resources\\app\\node_modules\\@vscode\\ripgrep\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\vcpkg"
       CMAKE_INSTALL_PREFIX: "C:/Program Files/FMCSimulator"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -3636,18 +3161,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "D:/Qt/6.8.3/msvc2022_64"
       ENV{PATH}:
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\DiagnosticsHub\\Collector"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
-        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\tools\\\\trae-gopls\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\workspaces\\\\e4694819\\\\versions\\\\node\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\versions\\\\node\\\\current"
@@ -3683,10 +3196,6 @@ events:
         - "C:\\Users\\ZhuanZ\\AppData\\Roaming\\npm"
         - "C:\\Users\\ZhuanZ\\.local\\bin\\"
         - "c:\\Users\\ZhuanZ\\AppData\\Local\\Programs\\Trae CN\\resources\\app\\node_modules\\@vscode\\ripgrep\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\vcpkg"
       CMAKE_INSTALL_PREFIX: "C:/Program Files/FMCSimulator"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -3799,18 +3308,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "D:/Qt/6.8.3/msvc2022_64"
       ENV{PATH}:
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\DiagnosticsHub\\Collector"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
-        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\tools\\\\trae-gopls\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\workspaces\\\\e4694819\\\\versions\\\\node\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\versions\\\\node\\\\current"
@@ -3846,10 +3343,6 @@ events:
         - "C:\\Users\\ZhuanZ\\AppData\\Roaming\\npm"
         - "C:\\Users\\ZhuanZ\\.local\\bin\\"
         - "c:\\Users\\ZhuanZ\\AppData\\Local\\Programs\\Trae CN\\resources\\app\\node_modules\\@vscode\\ripgrep\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\vcpkg"
       CMAKE_INSTALL_PREFIX: "C:/Program Files/FMCSimulator"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -3948,18 +3441,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "D:/Qt/6.8.3/msvc2022_64"
       ENV{PATH}:
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\DiagnosticsHub\\Collector"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
-        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\tools\\\\trae-gopls\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\workspaces\\\\e4694819\\\\versions\\\\node\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\versions\\\\node\\\\current"
@@ -3995,10 +3476,6 @@ events:
         - "C:\\Users\\ZhuanZ\\AppData\\Roaming\\npm"
         - "C:\\Users\\ZhuanZ\\.local\\bin\\"
         - "c:\\Users\\ZhuanZ\\AppData\\Local\\Programs\\Trae CN\\resources\\app\\node_modules\\@vscode\\ripgrep\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\vcpkg"
       CMAKE_INSTALL_PREFIX: "C:/Program Files/FMCSimulator"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -4089,18 +3566,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "D:/Qt/6.8.3/msvc2022_64"
       ENV{PATH}:
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\DiagnosticsHub\\Collector"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
-        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\tools\\\\trae-gopls\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\workspaces\\\\e4694819\\\\versions\\\\node\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\versions\\\\node\\\\current"
@@ -4136,10 +3601,6 @@ events:
         - "C:\\Users\\ZhuanZ\\AppData\\Roaming\\npm"
         - "C:\\Users\\ZhuanZ\\.local\\bin\\"
         - "c:\\Users\\ZhuanZ\\AppData\\Local\\Programs\\Trae CN\\resources\\app\\node_modules\\@vscode\\ripgrep\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\vcpkg"
       CMAKE_INSTALL_PREFIX: "C:/Program Files/FMCSimulator"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -5084,18 +4545,6 @@ events:
       CMAKE_PREFIX_PATH:
         - "D:/Qt/6.8.3/msvc2022_64"
       ENV{PATH}:
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\VCPackages"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\bin\\Roslyn"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\DiagnosticsHub\\Collector"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\\\MSBuild\\Current\\Bin\\amd64"
-        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\tools\\\\trae-gopls\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\workspaces\\\\e4694819\\\\versions\\\\node\\\\current"
         - "c:\\\\Users\\\\ZhuanZ\\\\.trae-cn\\\\sdks\\\\versions\\\\node\\\\current"
@@ -5131,10 +4580,6 @@ events:
         - "C:\\Users\\ZhuanZ\\AppData\\Roaming\\npm"
         - "C:\\Users\\ZhuanZ\\.local\\bin\\"
         - "c:\\Users\\ZhuanZ\\AppData\\Local\\Programs\\Trae CN\\resources\\app\\node_modules\\@vscode\\ripgrep\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
-        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\vcpkg"
       CMAKE_INSTALL_PREFIX: "C:/Program Files/FMCSimulator"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"

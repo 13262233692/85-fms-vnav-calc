@@ -16,6 +16,18 @@
     <ClCompile Include="D:\SOLO-10\85-fms-vnav-calc\src\core\vnav_solver.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="D:\SOLO-10\85-fms-vnav-calc\src\core\bada_atmosphere.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\SOLO-10\85-fms-vnav-calc\src\core\bada_aircraft.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\SOLO-10\85-fms-vnav-calc\src\core\bada_wind.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\SOLO-10\85-fms-vnav-calc\src\core\bada_integrator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="D:\SOLO-10\85-fms-vnav-calc\src\gui\lnav_table.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -49,6 +61,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="D:\SOLO-10\85-fms-vnav-calc\src\core\vnav_solver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\SOLO-10\85-fms-vnav-calc\src\core\bada_atmosphere.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\SOLO-10\85-fms-vnav-calc\src\core\bada_aircraft.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\SOLO-10\85-fms-vnav-calc\src\core\bada_wind.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\SOLO-10\85-fms-vnav-calc\src\core\bada_integrator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="D:\SOLO-10\85-fms-vnav-calc\src\gui\lnav_table.h">

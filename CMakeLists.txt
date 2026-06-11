@@ -34,6 +34,14 @@ set(PROJECT_SOURCES
     src/core/navigation.h
     src/core/vnav_solver.cpp
     src/core/vnav_solver.h
+    src/core/bada_atmosphere.cpp
+    src/core/bada_atmosphere.h
+    src/core/bada_aircraft.cpp
+    src/core/bada_aircraft.h
+    src/core/bada_wind.cpp
+    src/core/bada_wind.h
+    src/core/bada_integrator.cpp
+    src/core/bada_integrator.h
     src/gui/lnav_table.cpp
     src/gui/lnav_table.h
     src/gui/cdu_widget.cpp
@@ -97,3 +105,39 @@ if(WIN32)
 endif()
 
 enable_testing()
+
+add_executable(BADAValidationTest
+    tests/bada_validation_test.cpp
+    src/core/arinc424_parser.cpp
+    src/core/arinc424_parser.h
+    src/core/arinc424_types.h
+    src/core/navigation.cpp
+    src/core/navigation.h
+    src/core/vnav_solver.cpp
+    src/core/vnav_solver.h
+    src/core/bada_atmosphere.cpp
+    src/core/bada_atmosphere.h
+    src/core/bada_aircraft.cpp
+    src/core/bada_aircraft.h
+    src/core/bada_wind.cpp
+    src/core/bada_wind.h
+    src/core/bada_integrator.cpp
+    src/core/bada_integrator.h
+)
+
+target_include_directories(BADAValidationTest PRIVATE
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}/src/core
+)
+
+target_link_libraries(BADAValidationTest PRIVATE
+    Qt6::Core
+)
+
+if(MSVC)
+    target_compile_options(BADAValidationTest PRIVATE /W4)
+    set_property(TARGET BADAValidationTest PROPERTY
+        MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>DLL")
+endif()
+
+add_test(NAME BADAValidationTest COMMAND BADAValidationTest)

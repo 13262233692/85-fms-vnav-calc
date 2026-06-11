@@ -19,6 +19,9 @@
 #include "../core/arinc424_parser.h"
 #include "../core/navigation.h"
 #include "../core/vnav_solver.h"
+#include "../core/bada_aircraft.h"
+#include "../core/bada_wind.h"
+#include "../core/bada_integrator.h"
 
 namespace fmc {
 namespace gui {
@@ -51,9 +54,14 @@ private:
     void loadDefaultDatabase();
     QString generateSampleARINC424Data() const;
     void runVNAVSolver();
+    void runBADATrajectoryIntegration();
     nav::AltitudeConstraint getWaypointConstraint(size_t legIndex) const;
     void setWaypointConstraint(size_t legIndex, const nav::AltitudeConstraint& c);
     void applyDefaultSTARConstraints();
+    void onSelectAircraft();
+    void onConfigureWind();
+    void onSetCruiseMach();
+    void updateTrajectoryDisplay();
 
     CDUWidget* m_cduWidget;
     LNAVTable* m_lnavTable;
@@ -66,6 +74,8 @@ private:
     QLabel* m_statusFuelLabel;
     QLabel* m_statusTimeLabel;
     QLabel* m_statusVNAVLabel;
+    QLabel* m_statusAircraftLabel;
+    QLabel* m_statusTrajectoryLabel;
 
     arinc424::ARINC424Database m_database;
     arinc424::ARINC424Parser m_parser;
@@ -73,6 +83,14 @@ private:
     nav::VNAVProfile m_vnavProfile;
     nav::VNAVSolver m_vnavSolver;
     std::vector<nav::AltitudeConstraint> m_altitudeConstraints;
+
+    bada::BADAAircraft m_aircraft;
+    bada::WindModel m_windModel;
+    bada::BADATrajectoryIntegrator m_trajectoryIntegrator;
+    bada::TrajectoryIntegrationResult m_trajectoryResult;
+    double m_cruiseMach;
+    double m_initialFuelKg;
+    double m_initialMassKg;
 
     bool m_databaseLoaded;
     bool m_routeExecuted;

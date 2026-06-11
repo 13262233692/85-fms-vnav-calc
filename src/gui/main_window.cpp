@@ -2,6 +2,9 @@
 #include <QCoreApplication>
 #include <QDateTime>
 #include <QFile>
+#include <QFileDialog>
+#include <QInputDialog>
+#include <QMessageBox>
 #include <QTextStream>
 #include <QDesktopServices>
 #include <QUrl>
@@ -20,10 +23,17 @@ MainWindow::MainWindow(QWidget* parent)
       m_mainSplitter(nullptr),
       m_rightSplitter(nullptr),
       m_statusVNAVLabel(nullptr),
+      m_statusAircraftLabel(nullptr),
+      m_statusTrajectoryLabel(nullptr),
+      m_aircraft(bada::BADAAircraft::boeing737Max8()),
+      m_cruiseMach(0.785),
+      m_initialFuelKg(15000.0),
+      m_initialMassKg(68000.0),
       m_databaseLoaded(false),
       m_routeExecuted(false),
       m_simulatedLegIndex(-1),
       m_flightSimTimer(nullptr) {
+    m_windModel.setStandardAtmosphereWind(270.0, 40.0);
     setupUI();
     setupMenuBar();
     setupConnections();
@@ -136,6 +146,14 @@ void MainWindow::setupUI() {
     m_statusTimeLabel->setStyleSheet("color: rgb(255, 220, 100); padding: 0 10px;");
     statusBar->addPermanentWidget(m_statusTimeLabel);
 
+    m_statusAircraftLabel = new QLabel("ACFT: B737-MAX8");
+    m_statusAircraftLabel->setStyleSheet("color: rgb(180, 220, 255); padding: 0 10px;");
+    statusBar->addPermanentWidget(m_statusAircraftLabel);
+
+    m_statusTrajectoryLabel = new QLabel("TRAJ: --");
+    m_statusTrajectoryLabel->setStyleSheet("color: rgb(100, 255, 200); padding: 0 10px;");
+    statusBar->addPermanentWidget(m_statusTrajectoryLabel);
+
     m_flightSimTimer = new QTimer(this);
     m_flightSimTimer->setInterval(2000);
     connect(m_flightSimTimer, &QTimer::timeout, this, &MainWindow::simulateFlightProgress);
@@ -220,6 +238,26 @@ void MainWindow::setupMenuBar() {
     connect(applySTARAction, &QAction::triggered, this, [this]() {
         applyDefaultSTARConstraints();
     });
+
+    QMenu* perfMenu = menuBar->addMenu("&Performance");
+
+    QAction* selAircraftAction = perfMenu->addAction("&Select Aircraft...");
+    selAircraftAction->setShortcut(QKeySequence("Ctrl+M"));
+    connect(selAircraftAction, &QAction::triggered, this, &MainWindow::onSelectAircraft);
+
+    QAction* setMachAction = perfMenu->addAction("Set Cruise &Mach...");
+    setMachAction->setShortcut(QKeySequence("Ctrl+Shift+M"));
+    connect(setMachAction, &QAction::triggered, this, &MainWindow::onSetCruiseMach);
+
+    QAction* setWindAction = perfMenu->addAction("Configure &Wind...");
+    setWindAction->setShortcut(QKeySequence("Ctrl+W"));
+    connect(setWindAction, &QAction::triggered, this, &MainWindow::onConfigureWind);
+
+    perfMenu->addSeparator();
+
+    QAction* runTrajAction = perfMenu->addAction("&Run BADA Trajectory");
+    runTrajAction->setShortcut(QKeySequence("F5"));
+    connect(runTrajAction, &QAction::triggered, this, &MainWindow::runBADATrajectoryIntegration);
 
     QMenu* helpMenu = menuBar->addMenu("&Help");
 
@@ -431,6 +469,7 @@ void MainWindow::onRouteExecuted(const nav::FlightPlan& plan) {
     m_lnavTable->setFlightPlan(plan);
 
     runVNAVSolver();
+    runBADATrajectoryIntegration();
 
     if (!m_flightSimTimer->isActive()) {
         m_flightSimTimer->start();
@@ -780,6 +819,172 @@ QString MainWindow::generateSampleARINC424Data() const {
     out << "DASP   CTU   VOR DMEZUUUN30373900E103564900 162411570 180E06000                                                            \n";
 
     return sampleData;
+}
+
+void MainWindow::runBADATrajectoryIntegration() {
+    if (m_currentPlan.legs.empty()) {
+        if (m_statusTrajectoryLabel) {
+            m_statusTrajectoryLabel->setText("TRAJ: NO ROUTE");
+            m_statusTrajectoryLabel->setStyleSheet("color: rgb(255, 180, 0); padding: 0 10px;");
+        }
+        return;
+    }
+
+    if (!m_vnavProfile.isValid()) {
+        runVNAVSolver();
+        if (!m_vnavProfile.isValid()) {
+            if (m_statusTrajectoryLabel) {
+                m_statusTrajectoryLabel->setText("TRAJ: VNAV FAILED");
+                m_statusTrajectoryLabel->setStyleSheet("color: rgb(255, 80, 80); padding: 0 10px;");
+            }
+            return;
+        }
+    }
+
+    try {
+        m_trajectoryIntegrator.setAircraft(m_aircraft);
+        m_trajectoryIntegrator.setWindModel(m_windModel);
+        m_trajectoryIntegrator.setFlightPlan(m_currentPlan);
+        m_trajectoryIntegrator.setVNAVProfile(m_vnavProfile);
+        m_trajectoryIntegrator.setCruiseMach(m_cruiseMach);
+        m_trajectoryIntegrator.setInitialMassKg(m_initialMassKg);
+        m_trajectoryIntegrator.setInitialFuelKg(m_initialFuelKg);
+        m_trajectoryIntegrator.setIntegrationStepNm(1.0);
+
+        m_trajectoryResult = m_trajectoryIntegrator.integrate();
+        updateTrajectoryDisplay();
+
+        QString statusStr;
+        QString statusColor;
+        if (m_trajectoryResult.success) {
+            statusStr = QString("TRAJ: OK | BURN %1KG | %2NM")
+                            .arg(static_cast<quint64>(m_trajectoryResult.totalFuelBurnKg))
+                            .arg(static_cast<quint64>(m_trajectoryResult.totalDistanceNm));
+            statusColor = "rgb(0, 255, 150);";
+        } else {
+            statusStr = QString("TRAJ: FAIL | %1").arg(QString::fromStdString(m_trajectoryResult.errorMessage));
+            statusColor = "rgb(255, 80, 80);";
+        }
+
+        if (m_statusTrajectoryLabel) {
+            m_statusTrajectoryLabel->setText(statusStr);
+            m_statusTrajectoryLabel->setStyleSheet(QString("color: %1 padding: 0 10px;").arg(statusColor));
+        }
+
+    } catch (const std::exception& e) {
+        if (m_statusTrajectoryLabel) {
+            m_statusTrajectoryLabel->setText(QString("TRAJ: CRASH - %1")
+                .arg(QString::fromLocal8Bit(e.what()).left(40)));
+            m_statusTrajectoryLabel->setStyleSheet("color: rgb(255, 80, 80); padding: 0 10px;");
+        }
+    } catch (...) {
+        if (m_statusTrajectoryLabel) {
+            m_statusTrajectoryLabel->setText("TRAJ: CRASH - UNKNOWN");
+            m_statusTrajectoryLabel->setStyleSheet("color: rgb(255, 80, 80); padding: 0 10px;");
+        }
+    }
+}
+
+void MainWindow::updateTrajectoryDisplay() {
+    if (!m_trajectoryResult.success || m_trajectoryResult.legs.empty()) {
+        return;
+    }
+
+    m_lnavTable->setTrajectoryResult(m_trajectoryResult);
+
+    if (m_trajectoryResult.legs.size() > 0) {
+        const auto& lastLeg = m_trajectoryResult.legs.back();
+        m_statusFuelLabel->setText(QString("FUEL: %1 KG / BURN %2 KG")
+                                    .arg(static_cast<quint64>(lastLeg.fuelRemainingKg))
+                                    .arg(static_cast<quint64>(m_trajectoryResult.totalFuelBurnKg)));
+
+        int totalMin = static_cast<int>(lastLeg.cumulativeTimeMin);
+        int hours = totalMin / 60;
+        int mins = totalMin % 60;
+        m_statusTimeLabel->setText(QString("TIME: %1:%2")
+                                    .arg(hours, 2, 10, QChar('0'))
+                                    .arg(mins, 2, 10, QChar('0')));
+    }
+
+    m_vnavWidget->setTrajectoryResult(m_trajectoryResult);
+}
+
+void MainWindow::onSelectAircraft() {
+    QStringList aircraftList;
+    aircraftList << "Airbus A320 Neo"
+                 << "Boeing 737 MAX 8"
+                 << "Boeing 777-300ER"
+                 << "Airbus A330-300"
+                 << "Boeing 787-9";
+
+    bool ok;
+    QString selected = QInputDialog::getItem(this, "Select Aircraft",
+                                             "Choose aircraft type for performance calculation:",
+                                             aircraftList, 1, false, &ok);
+    if (!ok) return;
+
+    int idx = aircraftList.indexOf(selected);
+    switch (idx) {
+        case 0: m_aircraft = bada::BADAAircraft::airbusA320Neo(); break;
+        case 1: m_aircraft = bada::BADAAircraft::boeing737Max8(); break;
+        case 2: m_aircraft = bada::BADAAircraft::boeing777_300ER(); break;
+        case 3: m_aircraft = bada::BADAAircraft::airbusA330_300(); break;
+        case 4: m_aircraft = bada::BADAAircraft::boeing787_9(); break;
+        default: m_aircraft = bada::BADAAircraft::boeing737Max8(); break;
+    }
+
+    m_initialFuelKg = m_aircraft.limits.maximumFuelKg * 0.6;
+    m_initialMassKg = m_aircraft.limits.operatingEmptyWeightKg + m_initialFuelKg + 15000.0;
+
+    if (m_statusAircraftLabel) {
+        m_statusAircraftLabel->setText(QString("ACFT: %1")
+            .arg(selected.remove(' ').toUpper().left(10)));
+    }
+
+    if (m_routeExecuted) {
+        runBADATrajectoryIntegration();
+    }
+}
+
+void MainWindow::onConfigureWind() {
+    bool ok;
+    double windDir = QInputDialog::getDouble(this, "Wind Configuration",
+                                             "Wind direction (° true, direction blowing FROM):",
+                                             270.0, 0.0, 359.9, 1, &ok);
+    if (!ok) return;
+
+    double windSpeed = QInputDialog::getDouble(this, "Wind Configuration",
+                                               "Wind speed (kt):",
+                                               40.0, 0.0, 250.0, 1, &ok);
+    if (!ok) return;
+
+    m_windModel.setStandardAtmosphereWind(windDir, windSpeed);
+
+    QMessageBox::information(this, "Wind Configured",
+        QString("Wind model updated:\n  Direction: %1°T\n  Speed: %2 kt\n  (Linear altitude gradient)")
+            .arg(windDir, 0, 'f', 1)
+            .arg(windSpeed, 0, 'f', 1));
+
+    if (m_routeExecuted) {
+        runBADATrajectoryIntegration();
+    }
+}
+
+void MainWindow::onSetCruiseMach() {
+    bool ok;
+    double mach = QInputDialog::getDouble(this, "Cruise Mach Number",
+                                          "Enter cruise Mach number:",
+                                          m_cruiseMach, 0.6, 0.95, 4, &ok);
+    if (!ok) return;
+
+    m_cruiseMach = mach;
+
+    QMessageBox::information(this, "Cruise Mach Set",
+        QString("Cruise Mach number set to M%1").arg(m_cruiseMach, 0, 'f', 4));
+
+    if (m_routeExecuted) {
+        runBADATrajectoryIntegration();
+    }
 }
 
 }
